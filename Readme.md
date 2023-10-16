@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Юрий Фролов](https://up.htmlacademy.ru/htmlcss-individual/1/user/2153589).
-* Наставник: `Неизвестно`.
+- Студент: [Юрий Фролов](https://up.htmlacademy.ru/htmlcss-individual/1/user/2153589).
+- Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
