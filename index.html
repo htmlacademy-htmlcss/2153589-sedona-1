@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Academy: Седона</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="grid-container">
+  <div class="content">
+  <header class="page-header">
+    <a
+      href="https://htmlacademy.ru/"
+      target="_blank"
+      class="page-header-logo-link"
+    >
+      <img
+        src="img/icons/logo.svg"
+        alt="Логотип Sedona"
+        width="140"
+        height="70"
+      />
+    </a>
+    <div class="page-header-wrapper">
+      <nav class="navigation">
+        <ul class="list navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="link navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="link navigation-link">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" class="link navigation-link"
+            >Гостиницы</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header-menu-wrapper">
+        <button type="button" class="btn page-header-search-btn">
+          <img
+            src="img/icons/search.svg"
+            alt="Поиск по сайту"
+            width="18"
+            height="18"
+          />
+        </button>
+        <a href="#" class="link page-header-favorite-link">
+          <img
+            src="img/icons/heart.svg"
+            alt="Избранное"
+            width="18"
+            height="17"
+          />
+        </a>
+        <button type="button" class="btn page-header-popup-btn">
+          Хочу сюда!
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+</div>
+</body>
 </html>
