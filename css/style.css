@@ -152,96 +152,21 @@ h1, h2, h3 {
 }
 
 /* Блок article главной страницы*/
-.review {
+.advantages {
   padding: 69px 0 64px;
   text-align: center;
 }
 
-.review-title {
+.advantages-title {
   font-size: 30px;
   line-height: 36px;
   max-width: 620px;
   margin: 0 auto 25px;
-}
-
-.review-subtitle {
-  margin-bottom: 69px;
-}
-
-.review-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.review-item {
-  min-width: 400px;
-  height: 385px;
-  border: 1px solid #ffffff;
-  flex: 1;
-  background: rgba(130, 179, 211, 1);
-  color: #ffffff;
-  position: relative;
-  padding: 102px 85px;
-}
-
-.review-item:hover {
-  background: rgba(130, 179, 211, 0.6);
-}
-
-.review-item:nth-child(2),
-.review-item:nth-child(6) {
-  padding: 0;
-  width: auto;
-  flex: 2 0 60%;
-}
-
-.review-item:nth-child(n+3):nth-child(-n+5) {
-  background-color: rgba(240, 246, 250, 1);
-  color: #000000;
-}
-
-.review-item:nth-child(n+3):nth-child(-n+5):hover {
-  background-color: rgba(230, 240, 246, 1);
-}
-
-.review-item h3 {
-  font-size: 24px;
-  line-height: 28px;
-  position: relative;
-  margin-bottom: 47px;
-}
-
-.review-item h3::after {
-  content: '';
-  position: absolute;
-  width: 60px;
-  display: block;
-  height: 2px;
-  background-color: rgba(167, 202, 224, 1);
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.review-item:nth-child(n+3):nth-child(-n+5) h3::after {
-  background-color: rgba(168, 172, 175, 1);
-}
-
-/* Блок advantages главной страницы*/
-.advantages-title {
-  font-size: 30px;
-  line-height: 36px;
   font-weight: 700;
-  max-width: 505px;
-  margin: 64px auto 20px;
-  text-align: center;
 }
 
 .advantages-subtitle {
-  font-size: 22px;
-  line-height: 26px;
-  margin-bottom: 64px;
-  text-align: center;
+  margin-bottom: 69px;
 }
 
 .advantages-list {
@@ -254,16 +179,92 @@ h1, h2, h3 {
   height: 385px;
   border: 1px solid #ffffff;
   flex: 1;
+  background: rgba(130, 179, 211, 1);
+  color: #ffffff;
+  position: relative;
+  padding: 102px 85px;
+}
+
+.advantages-item:hover {
+  background: rgba(130, 179, 211, 0.6);
+}
+
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(6) {
+  padding: 0;
+  width: auto;
+  flex: 2 0 60%;
+}
+
+.advantages-item:nth-child(n+3):nth-child(-n+5) {
+  background-color: rgba(240, 246, 250, 1);
+  color: #000000;
+}
+
+.advantages:nth-child(n+3):nth-child(-n+5):hover {
+  background-color: rgba(230, 240, 246, 1);
+}
+
+.advantages-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  position: relative;
+  margin-bottom: 47px;
+}
+
+.advantages-item h3::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  display: block;
+  height: 2px;
+  background-color: rgba(167, 202, 224, 1);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages-item:nth-child(n+3):nth-child(-n+5) h3::after {
+  background-color: rgba(168, 172, 175, 1);
+}
+
+/* Блок advantages главной страницы*/
+.services-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  max-width: 505px;
+  margin: 64px auto 20px;
+  text-align: center;
+}
+
+.services-subtitle {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-item {
+  min-width: 400px;
+  height: 385px;
+  border: 1px solid #ffffff;
+  flex: 1;
   position: relative;
   padding: 81px 85px;
   text-align: center;
 }
 
-.advantages-item:nth-child(odd) {
+.services-item:nth-child(odd) {
   background: rgba(240, 246, 250, 1);
 }
 
-.advantages-item h3 {
+.services-item h3 {
   margin: 30px 0;
   font-size: 24px;
   line-height: 28px;
