@@ -46,7 +46,116 @@
       </div>
     </div>
   </header>
-</div>
+    <main class="main-catalog">
+      <section class="filter">
+        <h1 class="filter-title">Гостиницы Седоны</h1>
+        <ul class="list filter-breadcrumbs">
+          <li class="filter-breadcrumbs-item">
+            <a href="index.html"
+            ><img
+              src="img/icons/home-icon.svg"
+              alt="Иконка вернуться на главную страницу"
+            /></a>
+          </li>
+          <li class="filter-breadcrumbs-item"><span>Гостиницы</span></li>
+        </ul>
+        <form
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+          class="filter-form"
+        >
+          <fieldset class="filter-form-infrastructure">
+            <legend>Инфраструктура:</legend>
+            <label
+            ><input
+              type="checkbox"
+              name="swimming"
+              checked
+            />Бассейн</label
+            >
+            <label
+            ><input
+              type="checkbox"
+              name="parking"
+              checked
+            />Парковка</label
+            >
+            <label> <input type="checkbox" name="wifi" />Wi-Fi</label>
+          </fieldset>
+          <fieldset class="filter-form-type">
+            <legend>Тип жилья:</legend>
+            <label
+            ><input
+              type="radio"
+              name="housing-type"
+              value="Гостиница"
+              checked
+            />Гостиница</label
+            >
+            <label
+            ><input
+              type="radio"
+              name="housing-type"
+              value="Мотель"
+            />Мотель</label
+            >
+            <label>
+              <input
+                type="radio"
+                name="housing-type"
+                value="Апартаменты"
+              />Апартаменты</label
+            >
+          </fieldset>
+          <fieldset class="filter-form-price">
+            <legend>Стоимость, ₽:</legend>
+            <div class="filter-form-price-wrapper">
+              <label
+              ><input type="number" name="from" value="0" />
+                <span>от</span>
+              </label>
+              <label
+              ><input type="number" name="to" value="9000" /><span
+              >до</span
+              ></label
+              >
+            </div>
+            <div class="filter-form-range-wrapper">
+              <label
+              ><input
+                type="range"
+                name="range-from"
+                id="range-from"
+                value="10"
+                min="0"
+                max="20"
+                oninput="output.value = this.value"
+              /></label>
+              <label
+              ><input
+                type="range"
+                name="range-to"
+                id="range-to"
+                value="30"
+                min="20"
+                max="9000"
+                oninput="output.value = this.value"
+              /></label>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form-buttons">
+            <legend>Кнопки фильтра отелей</legend>
+            <button type="submit" class="btn filter-form-btn active">
+              Применить
+            </button>
+            <button type="button" class="btn filter-form-btn">
+              Сбросить
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </div>
   <footer class="page-footer">
     <form action="#" method="post" class="page-footer-form page-footer-form-catalog">
       <h3>Подпишитесь на рассылку</h3>
