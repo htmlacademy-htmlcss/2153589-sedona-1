@@ -17,7 +17,7 @@
 <div class="grid-container">
   <div class="content">
   <header class="page-header">
-    <a href="https://htmlacademy.ru/" target="_blank" class="page-header-logo-link">
+    <a href="index.html" class="page-header-logo-link">
       <img src="img/icons/logo.svg" alt="Логотип Sedona" width="140" height="70">
     </a>
     <div class="page-header-wrapper">
@@ -48,8 +48,9 @@
     </div>
   </header>
     <main class="main-catalog">
+      <h1 class="visually-hidden">Гостиницы Седоны-каталог</h1>
       <section class="filter">
-        <h1 class="filter-title">Гостиницы Седоны</h1>
+        <h2 class="filter-title">Гостиницы Седоны</h2>
         <ul class="list filter-breadcrumbs">
           <li class="filter-breadcrumbs-item">
             <a href="index.html"
@@ -156,12 +157,12 @@
         </form>
       </section>
       <section class="hotels">
-        <h2 class="visually-hidden">Отели</h2>
+        <h2 class="visually-hidden">Отсортированный список гостиниц</h2>
         <header class="hotels-header">
-          <div class="hotels-header-wrapper">
+          <p class="hotels-header-wrapper">
             <span><b>Найдено гостиниц:</b></span>
             <span><b>38</b></span>
-          </div>
+          </p>
           <div class="hotels-header-wrapper">
             <label>
               <select
@@ -402,36 +403,48 @@
           </ol>
         </footer>
       </section>
+      <section class="subscribe subscribe-catalog">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-subtitle">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form action="#" method="post" class="subscribe-form">
+          <label>
+            <input
+              type="email"
+              placeholder="Ваш e-mail"
+              name="subscribe-input"
+            />
+          </label>
+          <button type="submit" name="subscribe-btn" class="btn subscribe-btn">
+            Подписаться
+          </button>
+        </form>
+      </section>
     </main>
   </div>
   <footer class="page-footer">
-    <form action="#" method="post" class="page-footer-form page-footer-form-catalog">
-      <h3>Подпишитесь на рассылку</h3>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <label><input type="email" placeholder="Ваш e-mail" name="subscribe-input"></label>
-      <button type="submit" name="subscribe-btn" class="btn subscribe-btn">Подписаться</button>
-    </form>
-    <ul class="list footer-contacts-list">
-      <li class="footer-contacts-item">
-        <ul class="list footer-social-list">
-          <li class="footer-social-item">
-            <a href="https://vk.com/htmlacademy" class="link footer-social-link"><img
+    <ul class="list page-footer-contacts-list">
+      <li class="page-footer-contacts-item">
+        <ul class="list page-footer-social-list">
+          <li class="page-footer-social-item">
+            <a href="https://vk.com/htmlacademy" class="link page-footer-social-link"><img
               src="img/icons/vkontakte.svg" alt="Vkontakte"></a>
           </li>
-          <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy" class="link footer-social-link"><img
+          <li class="page-footer-social-item">
+            <a href="https://t.me/htmlacademy" class="link page-footer-social-link"><img
               src="img/icons/telegram.svg" alt="Telegram"></a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru" class="link footer-social-link"><img
+            <a href="https://www.youtube.com/user/htmlacademyru" class="link page-footer-social-link"><img
               src="img/icons/youtube.svg" alt="Youtube"></a>
           </li>
         </ul>
       </li>
-      <li class="footer-contacts-item">
-        <a href="tel:+78128121212" class="footer-contacts-phone">+7 (812) 812-12-12</a>
+      <li class="page-footer-contacts-item">
+        <a href="tel:+78128121212" class="page-footer-contacts-phone">+7 (812) 812-12-12</a>
       </li>
-      <li class="footer-contacts-item">
+      <li class="page-footer-contacts-item">
         <a href="https://htmlacademy.ru/">
           <img src="img/icons/html_academy_logo.svg" alt="Логотип HTMLAcademy">
         </a>
