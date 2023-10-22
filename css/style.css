@@ -131,20 +131,15 @@ h1, h2, h3 {
 
 /* Блок main главной страницы*/
 .promo {
-  height: 485px;
   background: url("../img/pictures/divider.svg") no-repeat bottom,
   url("../img/pictures/promo-background.jpg") no-repeat top;
   padding: 52px 0;
-}
-
-.promo-wrapper {
   text-align: center;
-  margin-left: auto;
-  right: auto;
 }
 
-.promo-wrapper p:nth-child(2) {
-  margin-bottom: 54px;
+.promo img {
+  width: 100%;
+  max-width: 458px;
 }
 
 /* Блок advantages главной страницы*/
@@ -152,17 +147,15 @@ h1, h2, h3 {
   padding: 69px 0 64px;
   text-align: center;
 }
-
+.advantages-text-wrapper{
+  max-width: 620px;
+  margin: 0 auto 69px;
+}
 .advantages-title {
   font-size: 30px;
   line-height: 36px;
-  max-width: 620px;
-  margin: 0 auto 25px;
   font-weight: 700;
-}
-
-.advantages-subtitle {
-  margin-bottom: 69px;
+  margin-bottom: 25px;
 }
 
 .advantages-list {
@@ -225,20 +218,21 @@ h1, h2, h3 {
 }
 
 /* Блок services главной страницы*/
+.services-text-wrapper{
+  max-width: 505px;
+  margin: 64px auto;
+  text-align: center;
+}
 .services-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  max-width: 505px;
-  margin: 64px auto 20px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .services-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin-bottom: 64px;
-  text-align: center;
 }
 
 .services-list {
