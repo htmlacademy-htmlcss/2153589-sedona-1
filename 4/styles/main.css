@@ -1039,6 +1039,13 @@ section.hotels {
   .hotels-header-wrapper:last-child {
     flex-basis: 90%;
   }
+  .modal-form {
+    padding: 64px 20px;
+  }
+  .modal-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1230,6 +1237,50 @@ section.hotels {
     width: 40px;
     height: 40px;
   }
+  .modal-form {
+    padding: 64px 8px;
+    width: 100%;
+  }
+  .modal-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .modal-label {
+    flex-basis: 100%;
+  }
+  .modal-input-wrapper {
+    flex-basis: 100%;
+  }
+
+  .modal-input {
+    padding: 12px 10px;
+  }
+
+  .modal-btn-wrapper {
+    flex-basis: 100%;
+  }
+
+  .modal-btn-wrapper-adult {
+    flex-basis: 100%;
+  }
+
+  .modal-btn-inner-wrapper {
+    flex-basis: 100%;
+  }
+
+  .modal-label-people {
+    flex-basis: 100%;
+  }
+
+  .modal-btn {
+    width: 100%;
+  }
+  .modal-submit{
+    margin-top: 20px;
+  }
+  .modal-overlay{
+    padding: 8px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1244,6 +1295,17 @@ section.hotels {
   .catalog-hotels-item-price {
     flex-direction: column;
     align-items: center;
+  }
+  .modal-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .modal-btn-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-btn-inner-wrapper{
+    margin-top: 15px;
   }
 
 }
@@ -1274,5 +1336,19 @@ section.hotels {
     height: 20px;
     font-size: 15px;
     margin-bottom: 5px;
+  }
+  .modal-title{
+    flex-basis: 85%;
+    font-size: 18px;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  .modal-close {
+    width: 30px;
+    height: 30px;
+  }
+  .modal-close img{
+    width: 12px;
+    height: 12px;
   }
 }
