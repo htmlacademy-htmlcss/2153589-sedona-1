@@ -134,8 +134,8 @@ h1, h2, h3 {
 
 /* Блок main главной страницы*/
 .promo {
-  background: url("../images/index-promo/divider.svg") no-repeat bottom,
-  url("../images/index-promo/promo-background.jpg") no-repeat top;
+  background: url("../images/index/promo-divider.svg") no-repeat bottom,
+  url("../images/index/promo-background.jpg") no-repeat top;
   padding: 52px 10px;
   text-align: center;
 }
@@ -300,7 +300,7 @@ h1, h2, h3 {
 .subscribe {
   color: #ffffff;
   text-align: center;
-  background: rgba(240, 246, 250, 1) url("../images/index-subscribe/subscribe-bg.jpg") no-repeat 100%;
+  background: rgba(240, 246, 250, 1) url("../images/index/subscribe-bg.jpg") no-repeat 100%;
   background-size: cover;
   padding: 96px 104px;
 }
@@ -383,7 +383,7 @@ h1, h2, h3 {
 
 /* Блок фильр отелей на странице catalog.html*/
 .filter {
-  background: rgba(240, 246, 250, 1) url("../images/catalog-filter/filter-background.jpg") no-repeat 100%;
+  background: rgba(240, 246, 250, 1) url("../images/catalog/filter-background.jpg") no-repeat 100%;
   background-size: cover;
   color: #ffffff;
   padding: 35px 70px 70px;
@@ -423,7 +423,7 @@ h1, h2, h3 {
   transform: translateY(-50%);
   width: 6px;
   height: 9px;
-  background: url("../images/catalog-filter/arrow-right.svg") no-repeat 100%;
+  background: url("../images/icons/arrow-right.svg") no-repeat 100%;
   background-size: cover;
 }
 
@@ -1027,7 +1027,7 @@ section.hotels {
     position: absolute;
     right: 5px;
     top: 5px;
-    background: url("../images/modal/close.svg") no-repeat center;
+    background: url("../images/icons/close.svg") no-repeat center;
   }
 
   section.hotels {
