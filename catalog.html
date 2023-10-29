@@ -178,8 +178,8 @@
               <b>Найдено гостиниц:</b>
               <span class="hotels-header-count">38</span>
             </p>
-            <div class="hotels-header-wrapper">
-              <label>
+            <div class="hotels-header-wrapper hotels-header-wrapper-select">
+              <label class="hotels-header-wrapper-label">
                 <select
                   name="hotels-select"
                   class="hotels-select"
@@ -191,33 +191,18 @@
               </label>
               <ul class="list view-list">
                 <li class="view-item">
-                  <button type="button" class="btn view-btn">
-                    <img
-                      src="images/catalog/hotels-view-tile.svg"
-                      alt="Вывод файлов плиткой"
-                      width="16"
-                      height="14"
-                    />
+                  <button type="button" class="btn view-btn view-btn-tile">
+                    <p class="visually-hidden">Вывод файлов плиткой</p>
                   </button>
                 </li>
                 <li class="view-item">
-                  <button type="button" class="btn view-btn">
-                    <img
-                      src="images/catalog/hotels-view-content.svg"
-                      alt="Вывод файлов с содержимым"
-                      width="16"
-                      height="14"
-                    />
+                  <button type="button" class="btn view-btn view-btn-content">
+                    <p class="visually-hidden">Вывод файлов с содержимым</p>
                   </button>
                 </li>
                 <li class="view-item">
-                  <button type="button" class="btn view-btn">
-                    <img
-                      src="images/catalog/hotels-view-list.svg"
-                      alt="Вывод файлов списком"
-                      width="16"
-                      height="14"
-                    />
+                  <button type="button" class="btn view-btn view-btn-list">
+                    <p class="visually-hidden">Вывод файлов списком</p>
                   </button>
                 </li>
               </ul>
@@ -239,12 +224,8 @@
                 <span>От 4000 ₽</span>
               </p>
               <div class="catalog-hotels-item-btns">
-                <a href="#" class="link btn catalog-hotels-item-btn"
-                  >Подробнее</a
-                >
-                <button type="button" class="btn catalog-hotels-item-btn">
-                  В избранное
-                </button>
+                <a href="#" class="link btn catalog-hotels-item-btn">Подробнее</a>
+                <a href="#" class="link catalog-hotels-item-btn">В избранное</a>
               </div>
               <ul class="list star-list">
                 <li class="star-item">
@@ -300,15 +281,8 @@
                 <span>От 5000 ₽</span>
               </p>
               <div class="catalog-hotels-item-btns">
-                <a href="#" class="link btn catalog-hotels-item-btn"
-                  >Подробнее</a
-                >
-                <button
-                  type="button"
-                  class="btn selected catalog-hotels-item-btn"
-                >
-                  В избранном
-                </button>
+                <a href="#" class="link btn catalog-hotels-item-btn">Подробнее</a>
+                <a href="#" class="link selected catalog-hotels-item-btn">В избранном</a>
               </div>
               <ul class="list star-list">
                 <li class="star-item">
@@ -364,12 +338,8 @@
                 <span>От 2500 ₽</span>
               </p>
               <div class="catalog-hotels-item-btns">
-                <a href="#" class="link btn catalog-hotels-item-btn"
-                  >Подробнее</a
-                >
-                <button type="button" class="btn catalog-hotels-item-btn">
-                  В избранное
-                </button>
+                <a href="#" class="link btn catalog-hotels-item-btn">Подробнее</a>
+                <a href="#"  class="link catalog-hotels-item-btn">В избранное</a>
               </div>
               <ul class="list star-list">
                 <li class="star-item">
@@ -417,12 +387,8 @@
                 <span>От 1500 ₽</span>
               </p>
               <div class="catalog-hotels-item-btns">
-                <a href="#" class="link btn catalog-hotels-item-btn"
-                  >Подробнее</a
-                >
-                <button type="button" class="btn catalog-hotels-item-btn">
-                  В избранное
-                </button>
+                <a href="#" class="link btn catalog-hotels-item-btn">Подробнее</a>
+                <a href="#" class="link catalog-hotels-item-btn">В избранное</a>
               </div>
               <ul class="list star-list">
                 <li class="star-item">
@@ -474,27 +440,29 @@
         <section class="subscribe subscribe-catalog">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form
             action="https://echo.htmlacademy.ru/"
             method="post"
             class="subscribe-form"
           >
-            <label>
-              <input
-                type="email"
-                placeholder="Ваш e-mail"
-                name="subscribe-input"
-              />
-            </label>
-            <button
-              type="submit"
-              name="subscribe-btn"
-              class="btn subscribe-btn"
-            >
-              Подписаться
-            </button>
+            <div class="subscribe-inner-wrapper">
+              <label>
+                <input
+                  type="email"
+                  placeholder="Ваш e-mail"
+                  name="subscribe-input"
+                />
+              </label>
+              <button
+                type="submit"
+                name="subscribe-btn"
+                class="btn subscribe-btn"
+              >
+                Подписаться
+              </button>
+            </div>
           </form>
         </section>
       </main>
@@ -503,45 +471,30 @@
           <li class="page-footer-social-item">
             <a
               href="https://vk.com/htmlacademy"
-              class="link page-footer-social-link"
+              class="link page-footer-social-link page-footer-social-link-vkontakte"
             >
-              <img
-                src="images/icons/social-vkontakte.svg"
-                alt="Присоединяйтесь к нам Vkontakte"
-                width="40"
-                height="40"
-              />
+              <p class="visually-hidden">Присоединяйтесь к нам Vkontakte</p>
             </a>
           </li>
           <li class="page-footer-social-item">
             <a
               href="https://t.me/htmlacademy"
-              class="link page-footer-social-link"
+              class="link page-footer-social-link page-footer-social-link-telegram"
             >
-              <img
-                src="images/icons/social-telegram.svg"
-                alt="Присоединяйтесь к нам в Telegram"
-                width="40"
-                height="40"
-              />
+              <p class="visually-hidden">Присоединяйтесь к нам в Telegram</p>
             </a>
           </li>
           <li class="page-footer-social-item">
             <a
               href="https://www.youtube.com/user/htmlacademyru"
-              class="link page-footer-social-link"
+              class="link page-footer-social-link page-footer-social-link-youtube"
             >
-              <img
-                src="images/icons/social-youtube.svg"
-                alt="Смотрите нас на Youtube"
-                width="40"
-                height="40"
-              />
+              <p class="visually-hidden">Смотрите нас на Youtube</p>
             </a>
           </li>
         </ul>
         <a href="tel:+78128121212" class="page-footer-contacts-phone"
-          >+7 (812) 812-12-12</a
+        >+7 (812) 812-12-12</a
         >
         <a href="https://htmlacademy.ru/" class="page-footer-dev-link">
           <img
