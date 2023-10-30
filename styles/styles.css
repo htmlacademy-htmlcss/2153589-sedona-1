@@ -124,7 +124,6 @@ img {
   height: 64px;
   display: flex;
   align-items: center;
-
 }
 
 .page-header-logo-link {
@@ -142,6 +141,7 @@ img {
   display: flex;
   align-items: center;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .navigation-item:not(:last-child) {
@@ -151,7 +151,6 @@ img {
 .navigation-link {
   display: flex;
   align-items: center;
-  /*height: 100%;*/
   font-size: 20px;
   line-height: 24px;
   color: #000000;
@@ -368,7 +367,6 @@ img {
 
 .services-item {
   flex-basis: 33.333%;
-  /*height: 390px;*/
   border: 1px solid #ffffff;
   position: relative;
   padding: 78px 82px;
@@ -386,6 +384,7 @@ img {
   line-height: 24px;
   text-transform: uppercase;
 }
+
 
 /* Блок search главной страницы*/
 .search-hotel {
@@ -453,6 +452,7 @@ img {
 
 .subscribe-form label {
   flex: 1 0 auto;
+  box-sizing: border-box;
 }
 
 .subscribe-form input {
@@ -954,7 +954,7 @@ section.hotels {
   min-height: 300vh;
   width: 100%;
   background: rgba(242, 242, 242, 0.8);
-  display: flex;
+  display: none;
   padding-top: 25px;
 }
 
@@ -1180,8 +1180,17 @@ section.hotels {
 
 /*Адаптив*/
 @media screen and (max-width: 991px) {
+  .page-header {
+    justify-content: space-between;
+    height: fit-content;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
+
   .page-header-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .page-header-logo-link {
@@ -1197,11 +1206,34 @@ section.hotels {
   .navigation-list, .user-navigation-list {
     flex-direction: column;
     text-align: center;
-    height: min-content;
+    height: 100%;
+    width: 100%;
   }
 
-  .navigation-list > *:not(:last-child), .user-navigation-list > *:not(:last-child) {
-    margin-bottom: 20px;
+  .user-navigation-list > *:last-child {
+    width: 100%;
+  }
+
+  .user-navigation-search-btn, .user-navigation-favorite-link {
+    display: none;
+  }
+
+  .navigation {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .navigation-item {
+    width: 80%;
+    padding: 12px 20px;
+    background-color: #83B3D3;
+    border: 1px solid #ffffff;
+    margin-right: 0 !important;
+  }
+
+  .navigation-item a {
+    color: #ffffff;
   }
 
   .advantages-item {
@@ -1210,17 +1242,20 @@ section.hotels {
     padding: 102px 0;
   }
 
-  .page-header {
-    padding: 0 20px 20px;
-  }
-
   .user-navigation-list {
-    max-width: 100%;
+    width: 80%;
   }
 
   .user-navigation-popup-btn {
     padding: 8px 20px;
+    display: block;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo {
+    background-size: cover;
   }
 
   .services-item {
@@ -1232,9 +1267,26 @@ section.hotels {
     padding: 96px 40px;
   }
 
+  .subscribe-inner-wrapper {
+    flex-direction: column;
+  }
+
+  .subscribe-form input {
+    padding: 12px 10px;
+    height: auto;
+  }
+
+  .subscribe-form button {
+    padding: 8px 10px;
+    height: auto;
+    width: 100%;
+    align-self: stretch;
+  }
+
   .page-footer {
     padding: 45px 20px 35px;
     flex-direction: column;
+    align-items: center;
   }
 
   .page-footer > *:not(:last-child) {
@@ -1243,6 +1295,7 @@ section.hotels {
 
   .page-footer-social-list {
     width: 220px;
+    justify-content: center;
   }
 
   .page-footer-contacts-phone {
@@ -1253,10 +1306,49 @@ section.hotels {
   .filter {
     padding: 35px 20px 70px;
   }
+  .filter-form {
+    flex-wrap: wrap;
+  }
 
   .filter-title {
     font-size: 34px;
     line-height: 42px;
+  }
+  .hotels-header, .hotels-header-wrapper{
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hotels-header-wrapper-select {
+    flex-basis: 100%;
+    justify-content: space-evenly;
+  }
+
+  .hotels-select {
+    padding: 14px 10px;
+  }
+  .catalog-hotels-item-btns {
+    flex-wrap: wrap;
+  }
+
+  .catalog-hotels-item-btn {
+    flex-basis: 100%;
+  }
+  .catalog-hotels-item-btn:first-child {
+    margin-bottom: 12px;
+  }
+
+  .catalog-hotels-item-btn:last-child {
+    flex-basis: 100%;
+  }
+  .star-list{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .catalog-hotels-item-rating{
+    width: 100%;
+    justify-content: center;
   }
 
   .navigation-btn {
@@ -1285,14 +1377,21 @@ section.hotels {
   .hotels-header-wrapper:last-child {
     flex-basis: 90%;
   }
+  .catalog-hotels-item-btns {
+    flex-wrap: wrap;
+  }
+  .catalog-hotels-item a img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .modal-form {
+    padding: 64px 20px;
+  }
 
-  /*.modal-form {*/
-  /*  padding: 64px 20px;*/
-  /*}*/
-  /*.modal-title {*/
-  /*  font-size: 28px;*/
-  /*  line-height: 32px;*/
-  /*}*/
+  .modal-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1397,8 +1496,11 @@ section.hotels {
   }
 
   .filter-form-price-wrapper {
-    flex-direction: column;
-    align-items: center;
+       flex-direction: column;
+       align-items: center;
+     }
+  .filter-form-price-wrapper label:first-child{
+    margin-bottom: 20px;
   }
 
   .filter-form-price-wrapper input {
@@ -1439,6 +1541,13 @@ section.hotels {
     width: 100%;
     text-align: center;
   }
+  .hotels-header-wrapper-label{
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+ .view-list{
+   margin: 0 auto;
+ }
 
   .catalog-hotels-item {
     padding: 10px;
@@ -1495,44 +1604,67 @@ section.hotels {
     height: 40px;
   }
 
-  /*.modal-form {*/
-  /*  padding: 64px 8px;*/
-  /*  width: 100%;*/
-  /*}*/
-  /*.modal-title {*/
-  /*  font-size: 26px;*/
-  /*  line-height: 30px;*/
-  /*}*/
-  /*.modal-label {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-input-wrapper {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-input {*/
-  /*  padding: 12px 10px;*/
-  /*}*/
-  /*.modal-btn-wrapper {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-btn-wrapper-adult {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-btn-inner-wrapper {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-label-people {*/
-  /*  flex-basis: 100%;*/
-  /*}*/
-  /*.modal-btn {*/
-  /*  width: 100%;*/
-  /*}*/
-  /*.modal-submit {*/
-  /*  margin-top: 20px;*/
-  /*}*/
-  /*.modal-overlay {*/
-  /*  padding: 8px;*/
-  /*}*/
+  .modal-form {
+    padding: 64px 8px;
+    width: 100%;
+  }
+
+  .modal-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .modal-label {
+    flex-basis: 100%;
+  }
+
+  .modal-input-wrapper {
+    flex-basis: 100%;
+  }
+
+  .modal-input {
+    padding: 12px 10px;
+  }
+
+  .modal-btn-wrapper {
+    flex-basis: 100%;
+  }
+
+  .modal-btn-wrapper-adult {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .modal-btn-inner-wrapper {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal-label-people {
+    flex-basis: 100%;
+  }
+
+  .modal-btn {
+   flex-basis: initial;
+  }
+
+  .modal-btn-wrapper-children {
+    padding-right: 0;
+  }
+
+  .modal-label-children {
+    padding-left: 0;
+  }
+
+  .modal-submit {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .modal-overlay {
+    padding: 8px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1550,17 +1682,19 @@ section.hotels {
     align-items: center;
   }
 
-  /*.modal-title {*/
-  /*  font-size: 24px;*/
-  /*  line-height: 38px;*/
-  /*}*/
-  /*.modal-btn-wrapper {*/
-  /*  flex-direction: column;*/
-  /*  align-items: center;*/
-  /*}*/
-  /*.modal-btn-inner-wrapper {*/
-  /*  margin-top: 15px;*/
-  /*}*/
+  .modal-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .modal-btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-btn-inner-wrapper {
+    margin-top: 15px;
+  }
 
 }
 
@@ -1593,18 +1727,20 @@ section.hotels {
     margin-bottom: 5px;
   }
 
-  /*.modal-title {*/
-  /*  flex-basis: 85%;*/
-  /*  font-size: 18px;*/
-  /*  line-height: 22px;*/
-  /*  word-wrap: break-word;*/
-  /*}*/
-  /*.modal-close {*/
-  /*  width: 30px;*/
-  /*  height: 30px;*/
-  /*}*/
-  /*.modal-close img {*/
-  /*  width: 12px;*/
-  /*  height: 12px;*/
-  /*}*/
+  .modal-title {
+    flex-basis: 85%;
+    font-size: 18px;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+
+  .modal-close {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-close img {
+    width: 12px;
+    height: 12px;
+  }
 }

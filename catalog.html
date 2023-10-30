@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона-cтраница каталога</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="layout-container">
@@ -14,8 +14,7 @@
             src="images/icons/sedona-logo.svg"
             alt="Логотип Sedona"
             width="140"
-            height="70"
-          />
+            height="70">
         </a>
         <button class="navigation-btn">
           <span class="navigation-btn-line"></span>
@@ -32,36 +31,24 @@
                 <a href="#" class="link navigation-link">О седоне</a>
               </li>
               <li class="navigation-item">
-                <a href="#" class="link navigation-link">Гостиницы</a>
+                <a class="link navigation-link">Гостиницы</a>
               </li>
             </ul>
           </nav>
           <ul class="list user-navigation-list">
             <li class="user-navigation-item">
               <button type="button" class="btn user-navigation-search-btn">
-                <img
-                  src="images/icons/search.svg"
-                  alt="Поиск по сайту"
-                  width="20"
-                  height="20"
-                />
+                <span class="visually-hidden">Поиск по сайту</span>
               </button>
             </li>
             <li class="user-navigation-item">
               <a href="#" class="link user-navigation-favorite-link">
-                <img
-                  src="images/icons/heart.svg"
-                  alt="Избранное"
-                  width="20"
-                  height="20"
-                />
-                <span class="user-navigation-favorite-count">11</span>
+                <span class="visually-hidden">Избранное</span>
+                <span class="user-navigation-favorite-count">33</span>
               </a>
             </li>
             <li class="user-navigation-item">
-              <a href="#" class="link btn user-navigation-popup-btn"
-                >Хочу сюда!</a
-              >
+              <a href="#" class="link btn user-navigation-popup-btn">Хочу сюда!</a>
             </li>
           </ul>
         </div>
@@ -77,8 +64,7 @@
                   src="images/icons/breadcrumbs-home.svg"
                   alt="Вернуться на главную страницу"
                   width="15"
-                  height="15"
-                />
+                  height="15">
               </a>
             </li>
             <li class="filter-breadcrumbs-item"><a>Гостиницы</a></li>
@@ -90,52 +76,26 @@
           >
             <fieldset class="filter-form-infrastructure">
               <legend>Инфраструктура:</legend>
-              <label
-                ><input type="checkbox" name="swimming" checked />Бассейн</label
-              >
-              <label
-                ><input type="checkbox" name="parking" checked />Парковка</label
-              >
-              <label><input type="checkbox" name="wifi" />Wi-Fi</label>
+              <label><input type="checkbox" name="swimming" checked >Бассейн</label>
+              <label><input type="checkbox" name="parking" checked >Парковка</label>
+              <label><input type="checkbox" name="wifi" >Wi-Fi</label>
             </fieldset>
             <fieldset class="filter-form-type">
               <legend>Тип жилья:</legend>
-              <label
-                ><input
-                  type="radio"
-                  name="housing-type"
-                  value="Гостиница"
-                  checked
-                />Гостиница</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="housing-type"
-                  value="Мотель"
-                />Мотель</label
-              >
-              <label
-                ><input
-                  type="radio"
-                  name="housing-type"
-                  value="Апартаменты"
-                />Апартаменты</label
-              >
+              <label><input type="radio" name="housing-type" value="Гостиница" checked>Гостиница</label>
+              <label><input type="radio" name="housing-type" value="Мотель">Мотель</label>
+              <label><input type="radio" name="housing-type" value="Апартаменты">Апартаменты</label>
             </fieldset>
             <fieldset class="filter-form-price">
               <legend>Стоимость, ₽:</legend>
               <div class="filter-form-price-wrapper">
-                <label
-                  ><input type="number" name="from" value="0" /><span
-                    >от</span
-                  ></label
-                >
-                <label
-                  ><input type="number" name="to" value="5000" /><span
-                    >до</span
-                  ></label
-                >
+                <label><input type="number" name="from" value="0">
+                  <span>от</span>
+                </label>
+                <label>
+                  <input type="number" name="to" value="5000">
+                  <span>до</span>
+                </label>
               </div>
               <div class="filter-form-range-wrapper">
                 <label>
@@ -147,7 +107,7 @@
                     min="0"
                     max="20"
                     oninput="output.value = this.value"
-                  />
+                  >
                 </label>
                 <label>
                   <input
@@ -158,15 +118,13 @@
                     min="20"
                     max="9000"
                     oninput="output.value = this.value"
-                  />
+                  >
                 </label>
               </div>
             </fieldset>
             <fieldset class="filter-form-buttons">
               <legend class="visually-hidden">Кнопки фильтра отелей</legend>
-              <button type="submit" class="btn filter-form-btn active">
-                Применить
-              </button>
+              <button type="submit" class="btn filter-form-btn active">Применить</button>
               <button type="reset" class="btn filter-form-btn">Сбросить</button>
             </fieldset>
           </form>
@@ -192,17 +150,17 @@
               <ul class="list view-list">
                 <li class="view-item">
                   <button type="button" class="btn view-btn view-btn-tile">
-                    <p class="visually-hidden">Вывод файлов плиткой</p>
+                    <span class="visually-hidden">Вывод файлов плиткой</span>
                   </button>
                 </li>
                 <li class="view-item">
                   <button type="button" class="btn view-btn view-btn-content">
-                    <p class="visually-hidden">Вывод файлов с содержимым</p>
+                    <span class="visually-hidden">Вывод файлов с содержимым</span>
                   </button>
                 </li>
                 <li class="view-item">
                   <button type="button" class="btn view-btn view-btn-list">
-                    <p class="visually-hidden">Вывод файлов списком</p>
+                    <span class="visually-hidden">Вывод файлов списком</span>
                   </button>
                 </li>
               </ul>
@@ -216,7 +174,7 @@
                   alt="Amara Resort & Spa"
                   width="300"
                   height="212"
-                />
+                >
                 <h3 class="catalog-hotels-item-title">Amara Resort & Spa</h3>
               </a>
               <p class="catalog-hotels-item-price">
@@ -234,7 +192,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -242,7 +200,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -250,7 +208,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -258,7 +216,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
               </ul>
               <p class="catalog-hotels-item-rating">
@@ -273,7 +231,7 @@
                   alt="Villas at Poco Diablo"
                   width="300"
                   height="212"
-                />
+                >
                 <h3 class="catalog-hotels-item-title">Villas at Poco Diablo</h3>
               </a>
               <p class="catalog-hotels-item-price">
@@ -291,7 +249,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -299,7 +257,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -307,7 +265,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -315,7 +273,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
               </ul>
               <p class="catalog-hotels-item-rating">
@@ -330,7 +288,7 @@
                   alt="Desert Quail Inn"
                   width="300"
                   height="212"
-                />
+                >
                 <h3 class="catalog-hotels-item-title">Desert Quail Inn</h3>
               </a>
               <p class="catalog-hotels-item-price">
@@ -339,7 +297,7 @@
               </p>
               <div class="catalog-hotels-item-btns">
                 <a href="#" class="link btn catalog-hotels-item-btn">Подробнее</a>
-                <a href="#"  class="link catalog-hotels-item-btn">В избранное</a>
+                <a href="#" class="link catalog-hotels-item-btn">В избранное</a>
               </div>
               <ul class="list star-list">
                 <li class="star-item">
@@ -348,7 +306,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -356,7 +314,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -364,7 +322,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
               </ul>
               <p class="catalog-hotels-item-rating">
@@ -379,7 +337,7 @@
                   alt="GreenTree Inn"
                   width="300"
                   height="212"
-                />
+                >
                 <h3 class="catalog-hotels-item-title">GreenTree Inn</h3>
               </a>
               <p class="catalog-hotels-item-price">
@@ -397,7 +355,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
                 <li class="star-item">
                   <img
@@ -405,7 +363,7 @@
                     alt="Звезда"
                     width="18"
                     height="17"
-                  />
+                  >
                 </li>
               </ul>
               <p class="catalog-hotels-item-rating">
@@ -440,7 +398,8 @@
         <section class="subscribe subscribe-catalog">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">
-            Только полезная информация и никакого спама,<br> честное бойскаутское!
+            Только полезная информация и никакого спама,<br>
+            честное бойскаутское!
           </p>
           <form
             action="https://echo.htmlacademy.ru/"
@@ -453,15 +412,9 @@
                   type="email"
                   placeholder="Ваш e-mail"
                   name="subscribe-input"
-                />
+                >
               </label>
-              <button
-                type="submit"
-                name="subscribe-btn"
-                class="btn subscribe-btn"
-              >
-                Подписаться
-              </button>
+              <button type="submit" name="subscribe-btn" class="btn subscribe-btn">Подписаться</button>
             </div>
           </form>
         </section>
@@ -473,7 +426,7 @@
               href="https://vk.com/htmlacademy"
               class="link page-footer-social-link page-footer-social-link-vkontakte"
             >
-              <p class="visually-hidden">Присоединяйтесь к нам Vkontakte</p>
+              <span class="visually-hidden">Присоединяйтесь к нам Vkontakte</span>
             </a>
           </li>
           <li class="page-footer-social-item">
@@ -481,7 +434,7 @@
               href="https://t.me/htmlacademy"
               class="link page-footer-social-link page-footer-social-link-telegram"
             >
-              <p class="visually-hidden">Присоединяйтесь к нам в Telegram</p>
+              <span class="visually-hidden">Присоединяйтесь к нам в Telegram</span>
             </a>
           </li>
           <li class="page-footer-social-item">
@@ -489,20 +442,18 @@
               href="https://www.youtube.com/user/htmlacademyru"
               class="link page-footer-social-link page-footer-social-link-youtube"
             >
-              <p class="visually-hidden">Смотрите нас на Youtube</p>
+              <span class="visually-hidden">Смотрите нас на Youtube</span>
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212" class="page-footer-contacts-phone"
-        >+7 (812) 812-12-12</a
-        >
+        <a href="tel:+78128121212" class="page-footer-contacts-phone">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/" class="page-footer-dev-link">
           <img
             src="images/icons/html-academy-logo.svg"
             alt="Разработчик сайта: HTMLAcademy"
             width="115"
             height="33"
-          />
+          >
         </a>
       </footer>
     </div>
@@ -514,12 +465,7 @@
       >
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button type="button" class="btn modal-close">
-          <img
-            src="images/icons/close.svg"
-            alt="Закрыть модальное окно"
-            width="14"
-            height="14"
-          />
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <label class="modal-label" for="start">Дата Заезда: </label>
         <p class="modal-input-wrapper">
@@ -528,14 +474,14 @@
             name="modal-start"
             class="modal-input"
             id="start"
-          />
+          >
           <span class="message error">
             Мы не можем отправить вас в прошлое.
           </span>
         </p>
-        <label class="modal-label" for="end">Дата Выезда: </label>
+        <label class="modal-label" for="end"><span class="nobr">Дата Выезда: </span></label>
         <p class="modal-input-wrapper">
-          <input type="date" name="modal-end" class="modal-input" id="end" />
+          <input type="date" name="modal-end" class="modal-input" id="end" >
           <span class="message end-info-success">
             На эти даты есть свободные номера. Пока есть.
           </span>
@@ -543,7 +489,13 @@
         <div class="modal-btn-wrapper modal-btn-wrapper-adult">
           <label class="modal-label modal-label-people">Взрослые: </label>
           <div class="modal-btn-inner-wrapper">
-            <button type="button" class="modal-btn" id="adults-minus">-</button>
+            <button
+              type="button"
+              class="modal-btn modal-btn-minus"
+              id="adults-minus"
+            >
+              <span class="visually-hidden">Уменьшить на единицу</span>
+            </button>
             <label class="modal-label-result">
               <input
                 type="text"
@@ -552,13 +504,19 @@
                 name="adults-result"
                 value="1"
                 readonly
-              />
+              >
             </label>
-            <button type="button" class="modal-btn" id="adults-plus">+</button>
+            <button
+              type="button"
+              class="modal-btn modal-btn-plus"
+              id="adults-plus"
+            >
+              <span class="visually-hidden">Увеличить на единицу</span>
+            </button>
           </div>
         </div>
-        <div class="modal-btn-wrapper">
-          <label class="modal-label modal-label-people">
+        <div class="modal-btn-wrapper modal-btn-wrapper-children">
+          <label class="modal-label modal-label-people modal-label-children">
             <span>Дети:</span>
             <span class="modal-info-wrapper">
               <img
@@ -566,7 +524,7 @@
                 alt="Дополнительная информация"
                 width="20"
                 height="20"
-              />
+              >
               <span class="modal-info">
                 Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -574,8 +532,12 @@
             </span>
           </label>
           <div class="modal-btn-inner-wrapper">
-            <button type="button" class="modal-btn" id="children-minus">
-              -
+            <button
+              type="button"
+              class="modal-btn modal-btn-minus"
+              id="children-minus"
+            >
+              <span class="visually-hidden">Уменьшить на единицу</span>
             </button>
             <label class="modal-label-result">
               <input
@@ -585,10 +547,14 @@
                 name="children-result"
                 value="0"
                 readonly
-              />
+              >
             </label>
-            <button type="button" class="modal-btn" id="children-plus">
-              +
+            <button
+              type="button"
+              class="modal-btn modal-btn-plus"
+              id="children-plus"
+            >
+              <span class="visually-hidden">Увеличить на единицу</span>
             </button>
           </div>
         </div>
