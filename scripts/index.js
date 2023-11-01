@@ -16,22 +16,7 @@ const childrenMinusButton = document.getElementById("children-minus");
 const childrenPlusButton = document.getElementById("children-plus");
 const adultsResult = document.getElementById("adults-result");
 const childrenResult = document.getElementById("children-result");
-const svgImages = document.querySelectorAll("svg");
 
-svgImages.forEach((item, ind) => {
-  switch (ind) {
-    case 0:
-      item.setAttribute("transform", "translate(-55 0)");
-      break;
-    case 1:
-      item.setAttribute("transform", "translate(-40 0)");
-      break;
-    case 2:
-      item.setAttribute("transform", "translate(-65 0)");
-      break;
-    default:
-  }
-});
 adultsPlusButton.onclick = () => {
   const result = +adultsResult.value;
   adultsResult.value = (result + 1).toString();
