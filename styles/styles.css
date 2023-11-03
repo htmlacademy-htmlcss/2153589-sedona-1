@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
   object-fit: contain;
@@ -28,7 +32,9 @@ img {
 
 body {
   margin: 0;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -292,6 +298,10 @@ body {
 }
 
 /* MAIN*/
+.main-index, .main-catalog {
+  flex-grow: 1;
+}
+
 .promo {
   background-color: #FBCEB1;
   background-image: url("../images/index/promo-divider.svg"),
@@ -578,7 +588,6 @@ body {
 
 /* FOOTER */
 .page-footer {
-  justify-self: end;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -657,6 +666,7 @@ body {
   line-height: 21px;
   color: #ffffff;
 }
+
 .filter-breadcrumbs-home-link:hover path,
 .filter-breadcrumbs-home-link:focus path {
   fill: #68A2CA;
@@ -968,7 +978,7 @@ input[type="range"] {
   font-weight: 700;
   color: #000000;
   width: 100%;
-  margin:0 0 16px;
+  margin: 0 0 16px;
 }
 
 .catalog-hotels-item-price {
