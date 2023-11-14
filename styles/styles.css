@@ -1470,6 +1470,7 @@ input[type="range"] {
     text-align: center;
     min-height: auto;
     width: 90%;
+    animation: mobile-menu 0.5s;
   }
 
   .user-navigation-search-btn, .user-navigation-favorite-link {
@@ -2055,5 +2056,15 @@ input[type="range"] {
   .modal-close img {
     width: 12px;
     height: 12px;
+  }
+}
+
+
+@keyframes mobile-menu {
+  from{
+transform: translateX(-100vw);
+}
+  to{
+    transform: translateX(0);
   }
 }
