@@ -973,9 +973,9 @@ input[type="range"] {
 
 .view-list {
   margin-left: 68px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 8px;
   max-width: 200px;
 }
 
@@ -998,10 +998,6 @@ input[type="range"] {
 
 .view-btn:active {
   border: 2px solid #000000;
-}
-
-.view-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .view-btn-tile {
@@ -1610,7 +1606,7 @@ input[type="range"] {
   }
 
   .catalog-hotels-list {
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .catalog-hotels-item-btns {
@@ -1847,9 +1843,11 @@ input[type="range"] {
   .view-list {
     margin: 0 auto;
   }
+
   .catalog-hotels-list {
     grid-template-columns: 1fr;
   }
+
   .catalog-hotels-item {
     text-align: center;
   }
