@@ -1017,24 +1017,20 @@ input[type="range"] {
 }
 
 .catalog-hotels-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0 0 61px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 0 76px;
 }
 
 .catalog-hotels-item {
   padding: 20px;
   border: 1px solid rgba(235, 235, 235, 1);
   border-radius: 4px;
-  flex-basis: 32.333%;
-  flex-shrink: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
-  margin: 0 0 17px;
 }
 
 .catalog-hotels-item-img {
@@ -1613,6 +1609,10 @@ input[type="range"] {
     padding: 14px 10px;
   }
 
+  .catalog-hotels-list {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
   .catalog-hotels-item-btns {
     flex-wrap: wrap;
   }
@@ -1847,11 +1847,10 @@ input[type="range"] {
   .view-list {
     margin: 0 auto;
   }
-
+  .catalog-hotels-list {
+    grid-template-columns: 1fr;
+  }
   .catalog-hotels-item {
-    padding: 10px;
-    flex-basis: 100%;
-    flex-grow: 1;
     text-align: center;
   }
 
@@ -2012,6 +2011,7 @@ input[type="range"] {
   .filter-form-price-wrapper {
     width: 90%;
   }
+
   .modal-title {
     flex-basis: 65%;
     font-size: 18px;
