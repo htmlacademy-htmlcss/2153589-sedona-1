@@ -27,7 +27,7 @@
         <nav class="navigation">
           <ul class="list navigation-list">
             <li class="navigation-item">
-              <a class="link navigation-link">Главная</a>
+              <a class="link navigation-link current">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="link navigation-link">О седоне</a>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
         <ul class="list user-navigation-list">
-          <li class="user-navigation-item">
+          <li class="user-navigation-item user-navigation-item-search">
             <button type="button" class="btn user-navigation-btn user-navigation-search-btn">
               <span class="visually-hidden">Поиск по сайту.</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
@@ -49,7 +49,7 @@
               </svg>
             </button>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item user-navigation-item-favorite">
             <a href="#" class="link user-navigation-btn user-navigation-favorite-link">
               <span class="visually-hidden">Избранное.</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
@@ -59,7 +59,7 @@
               <span class="user-navigation-favorite-count">33</span>
             </a>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item user-navigation-item-popup">
             <a href="#" class="link btn btn-brown user-navigation-popup-btn"
             >Хочу сюда!</a
             >
@@ -223,7 +223,7 @@
         <li class="page-footer-social-item">
           <a
             href="https://vk.com/htmlacademy"
-            class="link page-footer-social-link page-footer-social-link-vkontakte"
+            class="link page-footer-social-link"
           >
             <span class="visually-hidden">Присоединяйтесь к нам Vkontakte.</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
@@ -236,7 +236,7 @@
         <li class="page-footer-social-item">
           <a
             href="https://t.me/htmlacademy"
-            class="link page-footer-social-link page-footer-social-link-telegram"
+            class="link page-footer-social-link"
           >
             <span class="visually-hidden">Присоединяйтесь к нам в Telegram.</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
@@ -248,7 +248,7 @@
         <li class="page-footer-social-item">
           <a
             href="https://www.youtube.com/user/htmlacademyru"
-            class="link page-footer-social-link page-footer-social-link-youtube"
+            class="link page-footer-social-link"
           >
             <span class="visually-hidden">Смотрите нас на Youtube.</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
@@ -285,7 +285,7 @@
                 d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
         </svg>
       </button>
-      <label class="modal-label" for="start">Дата Заезда: </label>
+      <label class="modal-label" for="start">Дата&nbsp;Заезда: </label>
       <div class="modal-input-wrapper">
         <input
           type="date"
@@ -296,7 +296,7 @@
                   Мы не можем отправить вас в прошлое.
                 </span>
       </div>
-      <label class="modal-label" for="end"><span class="nobr">Дата Выезда: </span></label>
+      <label class="modal-label" for="end"><span>Дата&nbsp;Выезда: </span></label>
       <div class="modal-input-wrapper">
         <input type="date" name="modal-end" class="input modal-input" id="end">
         <span class="message end-info-success">
