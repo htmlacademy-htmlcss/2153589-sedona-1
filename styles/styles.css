@@ -399,13 +399,11 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px repeat(2,1fr);
 }
 
 .advantages-item {
-  width: 400px;
-  flex-basis: 33.333%;
   min-height: 385px;
   background-color: #82B3D3;
   color: #ffffff;
@@ -428,10 +426,8 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .advantages-item-img-wrapper {
   padding: 0;
-  flex-basis: 66.66%;
-  max-width: 100%;
   min-height: auto;
-  flex-grow: 1;
+  grid-column: auto/span 2;
 }
 
 .advantages-item-title {
@@ -1499,6 +1495,16 @@ input[type="range"] {
     border-radius: 0;
   }
 
+  .advantages-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .advantages-item-img-wrapper {
+    grid-column: auto/span 1;
+  }
+
+
   .advantages-item {
     padding: 90px 20px;
   }
@@ -1699,11 +1705,9 @@ input[type="range"] {
     margin-right: auto;
   }
 
-  .advantages-item {
-    width: 100%;
-    height: min-content;
-    flex: 1 0 auto;
-    padding: 90px 20px;
+  .advantages-list {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .services-item {
