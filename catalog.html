@@ -482,18 +482,19 @@
         name="modal-start"
         class="input modal-input"
         id="start"
+        data-show=""
       >
       <span class="message error">
                 Мы не можем отправить вас в прошлое.
               </span>
     </p>
     <label class="modal-label" for="end"><span>Дата&nbsp;Выезда: </span></label>
-    <p class="modal-input-wrapper">
-      <input type="date" name="modal-end" class="input modal-input" id="end">
+    <div class="modal-input-wrapper">
+      <input type="date" name="modal-end" class="input modal-input" id="end" data-show="">
       <span class="message end-info-success">
                 На эти даты есть свободные номера. Пока есть.
               </span>
-    </p>
+    </div>
     <div class="modal-btn-wrapper modal-btn-wrapper-adult">
       <label class="modal-label modal-label-people">Взрослые: </label>
       <div class="modal-btn-inner-wrapper">
@@ -532,18 +533,11 @@
     <div class="modal-btn-wrapper modal-btn-wrapper-children">
       <label class="modal-label modal-label-people modal-label-children">
         <span>Дети:</span>
+        <span class="visually-hidden">Дополнительная информация.</span>
         <span class="modal-info-wrapper">
-                  <img
-                    src="images/icons/info.svg"
-                    alt="Дополнительная информация."
-                    width="20"
-                    height="20"
-                  >
-                  <span class="modal-info">
-                    Укажите количество детей, которые будут с вами, возраст которых
-                    от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </span>
-                </span>
+        <span class="modal-info">
+          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
       </label>
       <div class="modal-btn-inner-wrapper">
         <button
