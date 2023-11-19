@@ -46,7 +46,7 @@ body {
 
 
 .btn {
-  border: 0;
+  border: none;
   margin: 0;
   border-radius: 4px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -102,7 +102,7 @@ body {
 }
 
 .btn-transparent:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .btn-transparent.disabled {
@@ -132,6 +132,16 @@ body {
 }
 
 .input:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+  background-color: #E6E6E6;
+}
+
+.input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.input:focus-visible {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
   background-color: #E6E6E6;
@@ -717,7 +727,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 }
 
 .filter-breadcrumbs-link[href]:not(.filter-breadcrumbs-home-link):hover {
-  color:#68A2CA;
+  color: #68A2CA;
   cursor: pointer;
 }
 
@@ -825,7 +835,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 }
 
 .filter-form-price-wrapper input {
-  padding: 15px 20px;
+  padding: 15px 42px 15px 20px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -946,6 +956,7 @@ input[type="range"] {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 20px;
 }
 
 .hotels-header-count {
@@ -955,28 +966,41 @@ input[type="range"] {
 .hotels-select {
   margin: 0;
   width: 100%;
-  padding: 12px 30px 12px 17px;
+  padding: 12px 40px 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: transparent url("../images/icons/select-tick.svg") no-repeat;
-  background-position-x: 93%;
-  background-position-y: center;
+  appearance: none;
+  background: transparent url("../images/icons/select-tick.svg") no-repeat right 20px center;
 }
 
-.hotels-select:hover, .hotels-select:focus {
-  border: 2px solid #68A2CA;
+.hotels-select:hover {
+  border-color: #68A2CA;
+}
+
+.hotels-select:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.hotels-select:focus:not(:focus-visible) {
+  outline: initial;
+}
+
+.hotels-select:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .hotels-select:active {
-  border: 2px solid #3F5E72;
+  border-color: #3F5E72;
 }
 
 .hotels-select.disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .view-list {
