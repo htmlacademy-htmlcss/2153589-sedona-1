@@ -224,7 +224,7 @@
               type="number"
               name="from"
               min="0"
-              max="20"
+              max="4500"
               value="1"
               class="input filter-form-price-btn"
               id="input-from"
@@ -235,7 +235,7 @@
               <input
                 type="number"
                 name="to"
-                min="20"
+                min="4500"
                 max="9000"
                 value="5000"
                 class="input filter-form-price-btn"
@@ -253,7 +253,7 @@
                 class="range-from"
                 value="1"
                 min="0"
-                max="20"
+                max="4500"
               />
             </label>
             <label>
@@ -263,7 +263,7 @@
                 class="range-to-last"
                 id="range-to"
                 value="5000"
-                min="20"
+                min="4500"
                 max="9000"
               />
             </label>
@@ -666,7 +666,8 @@
       </svg>
     </button>
     <label class="modal-label" for="start">Дата&nbsp;Заезда: </label>
-    <p class="modal-input-wrapper">
+      <div class="modal-input-wrapper">
+         <div class="modal-input-inner-wrapper">
       <input
         type="date"
         name="modal-start"
@@ -675,14 +676,15 @@
         placeholder="Укажите дату"
         data-show=""
       />
+    <span class="modal-input-start">Укажите дату заезда</span>
+  </div>
       <span class="message error">
             Мы не можем отправить вас в прошлое.
           </span>
-    </p>
-    <label class="modal-label" for="end"
-    ><span>Дата&nbsp;Выезда: </span></label
-    >
-    <div class="modal-input-wrapper">
+    </div>
+    <label class="modal-label" for="end">Дата&nbsp;Выезда:</label>
+      <div class="modal-input-wrapper">
+         <div class="modal-input-inner-wrapper">
       <input
         type="date"
         name="modal-end"
@@ -691,12 +693,14 @@
         placeholder="Укажите дату"
         data-show=""
       />
+        <span class="modal-input-end">Укажите дату выезда</span>
+      </div>
       <span class="message end-info-success">
             На эти даты есть свободные номера. Пока есть.
           </span>
     </div>
     <div class="modal-btn-wrapper modal-btn-wrapper-adult">
-      <label class="modal-label modal-label-people">Взрослые: </label>
+      <label class="modal-label modal-label-people" for="adults-plus">Взрослые: </label>
       <div class="modal-btn-inner-wrapper">
         <button
           type="button"
@@ -750,7 +754,7 @@
       </div>
     </div>
     <div class="modal-btn-wrapper modal-btn-wrapper-children">
-      <label class="modal-label modal-label-people modal-label-children">
+      <label class="modal-label modal-label-people modal-label-children" for="children-plus">
         <span>Дети:</span>
         <span class="visually-hidden">Дополнительная информация.</span>
         <span class="modal-info-wrapper">
@@ -812,7 +816,6 @@
         </button>
       </div>
     </div>
-
     <button type="submit" class="btn btn-blue modal-submit">Найти</button>
   </form>
 </div>
