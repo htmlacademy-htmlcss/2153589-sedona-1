@@ -925,7 +925,7 @@ input[type="range"] {
   outline: none;
 }
 
-.range-to-last{
+.range-to-last {
   box-shadow: -5px 0 0 #ffffff;
 }
 
@@ -1357,7 +1357,7 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.modal-input-inner-wrapper{
+.modal-input-inner-wrapper {
   position: relative;
   width: 100%;
   margin-bottom: 5px;
@@ -1392,17 +1392,17 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 4px;
 }
 
-.modal-input:hover +span{
+.modal-input:hover + span {
   background-color: #E6E6E6;
 }
 
-.modal-input:focus +span{
+.modal-input:focus + span {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
   background-color: #E6E6E6;
 }
 
-.modal-input:active +span{
+.modal-input:active + span {
   outline: 2px solid #000000;
   outline-offset: -2px;
   background-color: #F2F2F2;
@@ -1483,9 +1483,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-btn-plus:focus,
-.modal-btn-minus:focus {
+.modal-btn-minus:focus{
   border-radius: 4px;
   border: 3px solid #82B3D3;
+}
+
+.modal-btn-result:focus {
+ outline: 3px solid rgba(164,188,214,0.9);
+  outline-offset: -3px;
 }
 
 .modal-btn-plus:focus:not(:focus-visible),
@@ -1512,7 +1517,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #000000;
   border: 0;
   padding: 14px 6px;
-  outline: none;
 }
 
 .message {
