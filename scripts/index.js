@@ -35,6 +35,7 @@ const transformDate = (date, isDirectOrder = false) => {
 document.onkeydown = function(e) {
   if(e.key === "Escape") {
     modalOverlay.style.display = "none";
+    document.body.style.overflowY="auto";
   }
 };
 viewButtons.forEach(item=>{
@@ -69,13 +70,16 @@ childrenMinusButton.onclick = () => {
 };
 modalShowBtn.onclick = () => {
   modalOverlay.style.display = "flex";
+  document.body.style.overflowY="hidden";
 };
 modalCloseBtn.onclick = () => {
   modalOverlay.style.display = "none";
+  document.body.style.overflowY="auto";
 };
 modalOverlay.onclick = (e) => {
   if(e.target.classList.contains("modal-overlay")){
     modalOverlay.style.display = "none";
+    document.body.style.overflowY="auto";
   }
 };
 start.oninput = (event) => {
