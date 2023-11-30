@@ -1,6 +1,7 @@
 const start = document.getElementById("start");
 const end = document.getElementById("end");
 const modalOverlay = document.querySelector(".modal-overlay");
+const modalForm = document.querySelector(".modal-form");
 const modalShowBtn = document.querySelector(".user-navigation-popup-btn");
 const modalCloseBtn = document.querySelector(".modal-close");
 const error = document.querySelector(".error");
@@ -31,11 +32,9 @@ const transformDate = (date, isDirectOrder = false) => {
   return `${startDateArray[2]} ${monthArray[startDateArray[1]]} ${startDateArray[0]}`;
 };
 
-
 document.onkeydown = function(e) {
   if(e.key === "Escape") {
     modalOverlay.style.display = "none";
-    document.body.style.overflowY="auto";
   }
 };
 viewButtons.forEach(item=>{
@@ -70,16 +69,13 @@ childrenMinusButton.onclick = () => {
 };
 modalShowBtn.onclick = () => {
   modalOverlay.style.display = "flex";
-  document.body.style.overflowY="hidden";
 };
 modalCloseBtn.onclick = () => {
   modalOverlay.style.display = "none";
-  document.body.style.overflowY="auto";
 };
 modalOverlay.onclick = (e) => {
   if(e.target.classList.contains("modal-overlay")){
     modalOverlay.style.display = "none";
-    document.body.style.overflowY="auto";
   }
 };
 start.oninput = (event) => {
@@ -90,7 +86,6 @@ start.oninput = (event) => {
   } else {
     start.classList.add("active");
     start.value = event.target.value;
-    // start.setAttribute("data-show", transformDate(event.target.value));
     showStart.innerText=transformDate(event.target.value);
     error.style.display = "none";
   }
@@ -102,7 +97,6 @@ end.oninput = (event) => {
     successInfo.style.display = "block";
     end.value = event.target.value;
     end.classList.add("active");
-    //end.setAttribute("data-show", transformDate(event.target.value));
     showEnd.innerText=transformDate(event.target.value);
   } else {
     successInfo.style.display = "none";
