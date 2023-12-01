@@ -1519,6 +1519,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #000000;
   border: 0;
   padding: 14px 6px;
+  appearance: none;
+}
+.modal-btn-result::-webkit-outer-spin-button,
+.modal-btn-result::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .message {
