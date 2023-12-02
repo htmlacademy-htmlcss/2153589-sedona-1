@@ -1539,6 +1539,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-btn-result {
+  font: inherit;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
   text-align: center;
   color: #000000;
   border: 0;
@@ -1555,6 +1559,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .modal-btn-result::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.modal-btn-result {
+  -moz-appearance: textfield;
 }
 
 .message {
