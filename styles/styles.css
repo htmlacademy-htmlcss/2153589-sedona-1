@@ -1668,13 +1668,26 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 /*ADAPTIVE-991*/
 @media screen and (max-width: 991px) {
+  .layout-container {
+    padding: 0 6px;
+  }
+
   .page-header {
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0;
   }
 
   .page-header-wrapper {
+    width: calc(100% - 12px);
+    padding-top: 10px;
+    position: fixed;
+    top: 30px;
+    left: 6px;
+    z-index: 5;
     flex-direction: column;
+    min-height: auto;
+    background: #ffffff;
   }
 
   .page-header-logo-link {
@@ -1691,7 +1704,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     flex-direction: column;
     text-align: center;
     min-height: auto;
-    width: 90%;
+    width: 100%;
     animation: mobile-menu 0.5s;
   }
 
@@ -1878,10 +1891,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 
   .navigation-btn.active {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    background: url("../images/icons/close.svg") no-repeat center;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background: #ffffff url("../images/icons/close.svg") no-repeat right 15px top 11px;
   }
 
   section.hotels {
