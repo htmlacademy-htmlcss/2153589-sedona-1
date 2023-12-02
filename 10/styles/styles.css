@@ -65,6 +65,7 @@ body {
 
 .btn[disabled], .btn.disabled {
   background-color: #E5E5E5;
+  pointer-events: none;
 }
 
 .btn-brown {
@@ -176,6 +177,12 @@ body {
   outline: 2px solid #000000;
   outline-offset: -2px;
   background-color: #F2F2F2;
+}
+
+.input:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  outline-offset: -2px;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .list {
@@ -804,6 +811,11 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   border: 0;
 }
 
+.filter-form-field:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .filter-form-field > * {
   margin-bottom: 16px;
 }
@@ -1044,6 +1056,7 @@ input[type="range"]::-moz-range-thumb {
 
 .hotels-select[disabled] {
   border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -1411,6 +1424,16 @@ input[type="range"]::-moz-range-thumb {
   color: rgba(0, 0, 0, 1);
 }
 
+.modal-input:disabled + span,
+.modal-input:disabled:hover + span,
+.modal-input:disabled:focus + span,
+.modal-input:disabled:active + span {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+  outline-offset: -1px;
+  background-color: #F2F2F2;
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+}
 
 input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
@@ -1521,6 +1544,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 14px 6px;
   appearance: none;
 }
+
+.modal-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .modal-btn-result::-webkit-outer-spin-button,
 .modal-btn-result::-webkit-inner-spin-button {
   appearance: none;
