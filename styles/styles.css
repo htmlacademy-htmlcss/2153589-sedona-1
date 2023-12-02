@@ -147,6 +147,7 @@ body {
 .input {
   background-color: #F2F2F2;
   color: #000000;
+  font-family: inherit;
   outline: 0;
   border: 0;
   outline-offset: 0;
@@ -1605,7 +1606,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.modal-info-wrapper:hover .modal-info {
+.modal-info-wrapper:hover .modal-info,
+.modal-info-wrapper:focus .modal-info {
   display: block;
 }
 
