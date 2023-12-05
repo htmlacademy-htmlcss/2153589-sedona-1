@@ -451,7 +451,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: 400px repeat(2, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
 }
 
 .advantages-item {
@@ -461,6 +461,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   position: relative;
   padding: 102px 85px;
   text-align: center;
+  overflow: hidden;
 }
 
 .advantages-item-opacity-12 {
@@ -492,6 +493,8 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 .advantages-item-text {
   margin: 0 auto;
   max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .advantages-item-title::after {
@@ -706,14 +709,19 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   opacity: 0.3;
 }
 
+.page-footer-contacts{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-footer-contacts-phone {
   text-decoration: none;
   word-wrap: break-word;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  max-width: 400px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -728,6 +736,11 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   opacity: 0.3;
 }
 
+.page-footer-dev{
+  max-width: 115px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* FILTER */
 .filter {
@@ -898,15 +911,21 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 }
 
 
-.filter-form-price-wrapper span {
+.filter-form-price-wrapper label::after {
+  content: "от";
   color: #000000;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 20px;
+  color: rgba(169, 169, 169, 1);
   display: flex;
   align-items: center;
-  color: rgba(169, 169, 169, 1);
+  max-width: 30px;
+  overflow-wrap: break-word;
+}
+.filter-form-price-wrapper label:nth-of-type(2)::after {
+  content: "до";
 }
 
 .filter-form-range-wrapper {
@@ -1476,7 +1495,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 42px;
 }
 
-.modal-btn-inner-wrapper {
+.modal-btn-inner-wrapper,
+.modal-label-result{
   display: flex;
 }
 
@@ -1550,6 +1570,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border: 0;
   padding: 14px 6px;
   appearance: none;
+  min-height: auto;
 }
 
 .modal-btn:disabled {
