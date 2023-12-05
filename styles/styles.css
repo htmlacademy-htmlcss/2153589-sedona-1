@@ -269,6 +269,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   width: 140px;
   height: 64px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .page-header-logo-link:not(.current):hover, .page-header-logo-link:not(.current):focus {
@@ -276,13 +277,11 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 }
 
 .page-header-logo-link-img {
-  display: block;
   width: 100%;
-  object-fit: fill;
-  object-position: top;
   min-height: 100%;
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
   z-index: 2;
 }
 
@@ -451,7 +450,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .advantages-item {
@@ -709,7 +708,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   opacity: 0.3;
 }
 
-.page-footer-contacts{
+.page-footer-contacts {
   max-width: 400px;
   margin: 0 auto;
   display: flex;
@@ -736,7 +735,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   opacity: 0.3;
 }
 
-.page-footer-dev{
+.page-footer-dev {
   max-width: 115px;
   display: flex;
   flex-wrap: wrap;
@@ -924,6 +923,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   max-width: 30px;
   overflow-wrap: break-word;
 }
+
 .filter-form-price-wrapper label:nth-of-type(2)::after {
   content: "до";
 }
@@ -1496,7 +1496,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .modal-btn-inner-wrapper,
-.modal-label-result{
+.modal-label-result {
   display: flex;
 }
 
