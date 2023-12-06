@@ -59,10 +59,6 @@ body {
   outline: none;
 }
 
-.btn:active {
-  opacity: 0.3;
-}
-
 .btn[disabled], .btn.disabled {
   background-color: #E5E5E5;
   pointer-events: none;
@@ -85,6 +81,11 @@ body {
   background-color: #615048;
 }
 
+.btn-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .btn-blue {
   background-color: #82B3D3;
   color: #ffffff;
@@ -100,6 +101,11 @@ body {
 
 .btn-blue:focus-visible {
   background-color: #68A2C2;
+}
+
+.btn-blue:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-green {
@@ -119,6 +125,11 @@ body {
   background-color: #6C9E42;
 }
 
+.btn-green:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .btn-transparent {
   color: #ffffff;
 }
@@ -131,7 +142,19 @@ body {
   outline: 3px solid #83B3D3;
 }
 
-.btn-transparent.disabled {
+.btn-transparent:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.btn-transparent:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.btn-transparent:active {
+  opacity: 0.3;
+}
+
+.btn-transparent:disabled {
   background-color: transparent;
   opacity: 0.1;
 }
@@ -143,6 +166,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.filter-form-price-wrapper input:not(:disabled):active {
+  outline: 2px solid #000000;
+  outline-offset: -3px;
+  background-color: #F2F2F2;
+}
+
+.filter-form-price-wrapper input:disabled {
+  opacity: 0.5;
+  outline: none;
+}
+
 
 .input {
   background-color: #F2F2F2;
@@ -159,9 +194,15 @@ body {
 }
 
 .input:not(:disabled):focus {
-  outline: 2px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   outline-offset: -2px;
   background-color: #E6E6E6;
+}
+
+.input:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+  background-color: #F2F2F2;
 }
 
 .input:not(:disabled):active {
@@ -895,25 +936,25 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   border-radius: 4px 0 0 4px;
 }
 
-.filter-form-price-wrapper input:focus  {
+.filter-form-price-wrapper input:focus {
   outline: 3px solid #83B3D3;
   outline-offset: -2px;
   background-color: #E6E6E6;
 }
 
-.filter-form-price-wrapper input:not(:placeholder-shown):focus  {
+.filter-form-price-wrapper input:not(:placeholder-shown):focus {
   outline: 2px solid #000000;
   outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
-.filter-form-price-wrapper input:not(:disabled):active  {
+.filter-form-price-wrapper input:not(:disabled):active {
   outline: 2px solid #000000;
   outline-offset: -3px;
   background-color: #F2F2F2;
 }
 
-.filter-form-price-wrapper input:disabled{
+.filter-form-price-wrapper input:disabled {
   opacity: 0.5;
   outline: none;
 }
@@ -1285,7 +1326,7 @@ input[type="range"]::-moz-range-thumb {
 .pagination-list {
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill,60px);
+  grid-template-columns: repeat(auto-fill, 60px);
   grid-gap: 8px;
 }
 
@@ -1370,8 +1411,7 @@ input[type="range"]::-moz-range-thumb {
 .modal-close {
   min-width: 50px;
   min-height: 50px;
-  background: #F2F2F2 url("../images/icons/close.svg") no-repeat center;
-  background-size: 15px 15px;
+  background-color: #F2F2F2;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1387,6 +1427,23 @@ input[type="range"]::-moz-range-thumb {
 .modal-close:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
+}
+
+.modal-close:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.modal-close:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close:active svg path {
+  fill: #A1A1A1;
+}
+
+.modal-close:active {
+  background-color: #E6E6E6;
 }
 
 .modal-label {
@@ -1431,6 +1488,8 @@ input[type="range"]::-moz-range-thumb {
 .modal-input-start,
 .modal-input-end {
   width: 100%;
+  height: 100%;
+  font: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1439,32 +1498,34 @@ input[type="range"]::-moz-range-thumb {
   align-items: center;
   padding: 12px 30px 12px 20px;
   color: rgba(0, 0, 0, 0.6);
-  background: url("../images/icons/date-icon.svg") no-repeat right 20px center;
+  background: #F2F2F2 url("../images/icons/date-icon.svg") no-repeat right 20px center;
   background-size: 15px;
   border-radius: 4px;
+  border: none;
 }
 
-.modal-input:hover + span {
+.modal-input:hover + label input {
   background-color: #E6E6E6;
 }
 
-.modal-input:focus + span {
+.modal-input:focus + label input {
   outline: 3px solid #83B3D3;
   outline-offset: -3px;
   background-color: #E6E6E6;
 }
 
-.modal-input:active + span {
+.modal-input:focus + label input:not(:placeholder-shown),
+.modal-input:not(:disabled):active + label input {
   outline: 2px solid #000000;
   outline-offset: -2px;
   background-color: #F2F2F2;
   color: rgba(0, 0, 0, 1);
 }
 
-.modal-input:disabled + span,
-.modal-input:disabled:hover + span,
-.modal-input:disabled:focus + span,
-.modal-input:disabled:active + span {
+.modal-input:disabled + label input,
+.modal-input:disabled:hover + label input,
+.modal-input:disabled:focus + label input,
+.modal-input:disabled:active + label input {
   outline: 1px solid rgba(0, 0, 0, 0.2);
   outline-offset: -1px;
   background-color: #F2F2F2;
@@ -1539,16 +1600,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
   outline: none;
 }
 
+.modal-btn svg {
+  width: 10px;
+  height: 10px;
+}
+
 .modal-btn-plus:hover path,
 .modal-btn-minus:hover path {
   fill: #000000;
   fill-opacity: 1.0;
 }
 
-.modal-btn-plus:focus,
-.modal-btn-minus:focus {
-  border-radius: 4px;
-  border: 3px solid #82B3D3;
+.modal-btn-plus:focus svg,
+.modal-btn-minus:focus svg {
+  border-radius: 1px;
+  outline: 3px solid #82B3D3;
+  outline-offset: 4px;
 }
 
 .modal-btn-result:focus {
@@ -1558,15 +1625,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .modal-btn-plus:focus:not(:focus-visible),
 .modal-btn-minus:focus:not(:focus-visible) {
-  border-radius: 4px;
-  border: transparent;
+  border-radius: 1px;
+  outline: none;
 }
 
 
 .modal-btn-plus:focus-visible,
 .modal-btn-minus:focus-visible {
-  border-radius: 4px;
-  border: 3px solid #82B3D3;
+  border-radius: 1px;
+  outline: 3px solid #82B3D3;
+  outline-offset: 4px;
 }
 
 .modal-btn-plus:active path,

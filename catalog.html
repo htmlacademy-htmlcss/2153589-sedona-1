@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона-cтраница каталога</title>
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles/styles.css"/>
-  <link rel="stylesheet" href="styles/custom.css"/>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body>
 <div class="layout-container">
@@ -18,7 +18,7 @@
         width="140"
         height="70"
         class="page-header-logo-link-img"
-      />
+      >
     </a>
     <button class="navigation-btn">
       <span class="navigation-btn-line"></span>
@@ -145,7 +145,7 @@
               id="filter-form-swimming"
               class="custom-checkbox"
               checked
-            />
+            >
             <label class="custom-label" for="filter-form-swimming"
             >Бассейн</label
             >
@@ -157,7 +157,7 @@
               id="filter-form-parking"
               class="custom-checkbox"
               checked
-            />
+            >
             <label class="custom-label" for="filter-form-parking"
             >Парковка</label
             >
@@ -168,7 +168,7 @@
               name="wifi"
               id="filter-form-wifi"
               class="custom-checkbox"
-            />
+            >
             <label class="custom-label" for="filter-form-wifi">Wi-Fi</label>
           </div>
         </fieldset>
@@ -184,7 +184,7 @@
               class="custom-radio"
               id="filter-form-hostel"
               checked
-            />
+            >
             <label class="custom-label" for="filter-form-hostel"
             >Гостиница</label
             >
@@ -196,7 +196,7 @@
               value="Мотель"
               class="custom-radio"
               id="filter-form-motel"
-            />
+            >
             <label class="custom-label" for="filter-form-motel"
             >Мотель</label
             >
@@ -208,7 +208,7 @@
               value="Апартаменты"
               class="custom-radio"
               id="filter-form-apartments"
-            />
+            >
             <label class="custom-label" for="filter-form-apartments"
             >Апартаменты</label
             >
@@ -228,7 +228,7 @@
               placeholder="1"
               class="input filter-form-price-btn"
               id="input-from"
-            />
+            >
             </label>
             <label>
               <input
@@ -239,7 +239,7 @@
                 placeholder="9000"
                 class="input filter-form-price-btn"
                 id="input-to"
-              />
+              >
             </label>
           </div>
           <div class="filter-form-range-wrapper">
@@ -252,7 +252,7 @@
                 value="1"
                 min="0"
                 max="4500"
-              />
+              >
             </label>
             <label>
               <input
@@ -263,7 +263,7 @@
                 value="5000"
                 min="4500"
                 max="9000"
-              />
+              >
             </label>
           </div>
         </fieldset>
@@ -326,7 +326,7 @@
               width="300"
               height="212"
               class="catalog-hotels-item-img"
-            />
+            >
             <h3 class="catalog-hotels-item-title">Amara Resort & Spa</h3>
           </a>
           <div class="catalog-hotels-item-price">
@@ -370,7 +370,7 @@
               width="300"
               height="212"
               class="catalog-hotels-item-img"
-            />
+            >
             <h3 class="catalog-hotels-item-title">Villas at Poco Diablo</h3>
           </a>
           <div class="catalog-hotels-item-price">
@@ -416,7 +416,7 @@
               width="300"
               height="212"
               class="catalog-hotels-item-img"
-            />
+            >
             <h3 class="catalog-hotels-item-title">Desert Quail Inn</h3>
           </a>
           <div class="catalog-hotels-item-price">
@@ -457,7 +457,7 @@
               width="300"
               height="212"
               class="catalog-hotels-item-img"
-            />
+            >
             <h3 class="catalog-hotels-item-title">GreenTree Inn</h3>
           </a>
           <div class="catalog-hotels-item-price">
@@ -514,7 +514,7 @@
     <section class="subscribe subscribe-catalog">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-subtitle">
-        Только полезная информация и никакого спама,<br/>
+        Только полезная информация и никакого спама,<br>
         честное бойскаутское!
       </p>
       <form
@@ -529,7 +529,7 @@
               placeholder="Ваш e-mail"
               name="subscribe-input"
               class="input subscribe-form-input"
-            />
+            >
           </label>
           <button
             type="submit"
@@ -655,6 +655,10 @@
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <button type="button" class="btn modal-close">
         <span class="visually-hidden">Закрыть модальное окно.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
+          <path fill="#000"
+                d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/>
+        </svg>
       </button>
       <label class="modal-label" for="start">Дата&nbsp;Заезда: </label>
       <div class="modal-input-wrapper">
@@ -664,10 +668,9 @@
             name="modal-start"
             class="input modal-input"
             id="start"
-            placeholder="Укажите дату"
-            data-show=""
-          />
-          <span class="modal-input-start">Укажите дату заезда</span>
+            tabindex="-1"
+          >
+          <label><input type="text" class="input modal-input-start" placeholder="Укажите дату заезда"></label>
         </div>
         <span class="message error">
             Мы не можем отправить вас в прошлое.
@@ -681,10 +684,9 @@
             name="modal-end"
             class="input modal-input"
             id="end"
-            placeholder="Укажите дату"
-            data-show=""
-          />
-          <span class="modal-input-end">Укажите дату выезда</span>
+            tabindex="-1"
+          >
+          <label><input type="text" class="input modal-input-end" placeholder="Укажите дату выезда"></label>
         </div>
         <span class="message end-info-success">
             На эти даты есть свободные номера. Пока есть.
@@ -718,7 +720,7 @@
               id="adults-result"
               name="adults-result"
               value="1"
-            />
+            >
           </label>
           <button
             type="button"
@@ -745,10 +747,10 @@
         </div>
       </div>
       <div class="modal-btn-wrapper modal-btn-wrapper-children">
-        <label class="modal-label modal-label-people modal-label-children" for="children-result">
+        <label class="modal-label modal-label-people modal-label-children" for="modal-info-btn">
           <span>Дети:</span>
           <span class="visually-hidden">Дополнительная информация.</span>
-          <button type="button" class="modal-info-wrapper" aria-labelledby="tooltip-label-info">
+          <button type="button" class="modal-info-wrapper" aria-labelledby="tooltip-label-info" id="modal-info-btn">
               <span class="modal-info" role="tooltip" id="tooltip-label-info">
                 Укажите количество детей, которые будут с вами, возраст которых
                 от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
@@ -781,7 +783,7 @@
               id="children-result"
               name="children-result"
               value="0"
-            />
+            >
           </label>
           <button
             type="button"

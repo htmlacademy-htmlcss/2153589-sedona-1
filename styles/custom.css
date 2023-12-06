@@ -1,9 +1,9 @@
 .custom-radio, .custom-checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  cursor: pointer;
-}
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+   cursor: pointer;
+ }
 
 .custom-label {
   cursor: pointer;
