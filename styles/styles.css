@@ -790,6 +790,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .filter-breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 42px;
 }
@@ -809,6 +810,7 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .filter-breadcrumbs-home-link {
   padding-left: 0;
+  border-radius: 2px;
 }
 
 .filter-breadcrumbs-link[href]:not(.filter-breadcrumbs-home-link):hover {
@@ -825,6 +827,24 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 .filter-breadcrumbs-home-link:hover path,
 .filter-breadcrumbs-home-link:focus path {
   fill: #68A2CA;
+}
+
+.filter-breadcrumbs-home-link:focus {
+  outline: none;
+}
+
+.filter-breadcrumbs-home-link:focus svg {
+  outline: 1px solid #68A2CA;
+  outline-offset: 4px;
+}
+
+.filter-breadcrumbs-home-link:focus:not(:focus-visible) svg {
+  outline: none;
+}
+
+.filter-breadcrumbs-home-link:focus-visible svg {
+  outline: 1px solid #68A2CA;
+  outline-offset: 4px;
 }
 
 .filter-breadcrumbs-home-link:active path {
@@ -1509,8 +1529,8 @@ input[type="range"]::-moz-range-thumb {
   border: none;
 }
 
-.modal-input + label input:not(:placeholder-shown){
-  color:rgba(0,0,0,1);
+.modal-input + label input:not(:placeholder-shown) {
+  color: rgba(0, 0, 0, 1);
 }
 
 .modal-input:hover + label input {
