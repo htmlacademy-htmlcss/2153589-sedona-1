@@ -72,3 +72,8 @@
   background-color: #A4BCD6;
 }
 
+.custom-checkbox:disabled + label::before,
+.custom-radio:disabled + label::before {
+  opacity: 0.5;
+  pointer-events: none;
+}

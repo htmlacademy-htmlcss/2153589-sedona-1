@@ -167,18 +167,6 @@ body {
   padding: 0;
 }
 
-.filter-form-price-wrapper input:not(:disabled):active {
-  outline: 2px solid #000000;
-  outline-offset: -3px;
-  background-color: #F2F2F2;
-}
-
-.filter-form-price-wrapper input:disabled {
-  opacity: 0.5;
-  outline: none;
-}
-
-
 .input {
   background-color: #F2F2F2;
   color: #000000;
@@ -258,7 +246,6 @@ body {
 h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
   text-align: center;
 }
-
 
 /* HEADER*/
 
@@ -384,6 +371,20 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 .user-navigation-btn:hover path,
 .user-navigation-btn:focus path {
   fill: #68A2CA;
+}
+
+.user-navigation-btn:focus {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.user-navigation-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.user-navigation-btn:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .user-navigation-btn:active path {
@@ -938,19 +939,18 @@ h1.visually-hidden, h2.visually-hidden, h3.visually-hidden {
 
 .filter-form-price-wrapper input:focus {
   outline: 3px solid #83B3D3;
-  outline-offset: -2px;
   background-color: #E6E6E6;
 }
 
 .filter-form-price-wrapper input:not(:placeholder-shown):focus {
   outline: 2px solid #000000;
-  outline-offset: -3px;
+  outline-offset: -1px;
   background-color: #F2F2F2;
 }
 
 .filter-form-price-wrapper input:not(:disabled):active {
   outline: 2px solid #000000;
-  outline-offset: -3px;
+  outline-offset: -1px;
   background-color: #F2F2F2;
 }
 
@@ -1016,6 +1016,11 @@ input[type="range"] {
 input[type="range"]:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 0.2rem #83B3D3;
 }
+
+input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 0.1rem #83B3D3;
+}
+
 
 .range-to-last {
   box-shadow: -5px 0 0 #ffffff;
@@ -1504,6 +1509,10 @@ input[type="range"]::-moz-range-thumb {
   border: none;
 }
 
+.modal-input + label input:not(:placeholder-shown){
+  color:rgba(0,0,0,1);
+}
+
 .modal-input:hover + label input {
   background-color: #E6E6E6;
 }
@@ -1680,7 +1689,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .error {
-  /*display: none;*/
+  display: none;
   color: #FF5757;
 }
 
