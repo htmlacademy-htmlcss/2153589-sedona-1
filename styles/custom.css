@@ -1,22 +1,25 @@
-.custom-radio, .custom-checkbox {
-   position: absolute;
-   z-index: -1;
-   opacity: 0;
-   cursor: pointer;
- }
+.custom-radio,
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
 
 .custom-label {
   cursor: pointer;
 }
 
-.custom-radio + label, .custom-checkbox + label {
+.custom-radio + label,
+.custom-checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.custom-radio + label::before, .custom-checkbox + label::before {
-  content: '';
+.custom-radio + label::before,
+.custom-checkbox + label::before {
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -47,12 +50,12 @@
 
 .custom-checkbox:not(:disabled):hover + label::before,
 .custom-radio:not(:disabled):hover + label::before {
-  background-color: #CFDDE9;
+  background-color: #cfdde9;
 }
 
 .custom-checkbox:focus + label::before,
 .custom-radio:focus + label::before {
-  box-shadow: 0 0 0 0.2rem #83B3D3;
+  box-shadow: 0 0 0 0.2rem #83b3d3;
   background-color: #ffffff;
 }
 
@@ -64,12 +67,12 @@
 .custom-checkbox:focus-visible + label::before,
 .custom-radio:focus-visible + label::before {
   background-color: #ffffff;
-  box-shadow: 0 0 0 0.2rem #83B3D3;
+  box-shadow: 0 0 0 0.2rem #83b3d3;
 }
 
 .custom-checkbox:not(:disabled):active + label::before,
 .custom-radio:not(:disabled):active + label::before {
-  background-color: #A4BCD6;
+  background-color: #a4bcd6;
 }
 
 .custom-checkbox:disabled + label::before,
