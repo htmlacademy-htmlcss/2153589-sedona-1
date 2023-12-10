@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 .custom-radio,
 .custom-checkbox {
   position: absolute;
@@ -14,6 +21,7 @@
 .custom-checkbox + label {
   display: inline-flex;
   align-items: center;
+  -webkit-user-select: none;
   user-select: none;
 }
 

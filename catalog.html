@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона-cтраница каталога</title>
   <link rel="icon" type="image/png" href="images/icons/favicon.png">
-  <link rel="stylesheet" href="styles/styles-prefix.css">
-  <link rel="stylesheet" href="styles/custom-prefix.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body>
   <div class="layout-container">
@@ -20,6 +20,7 @@
           class="page-header-logo-link-img"
         >
       </a>
+      <!-- Данный фрагмент кода временно добавлен для оценки адаптива -->
       <button class="navigation-btn">
         <span class="navigation-btn-line"></span>
         <span class="navigation-btn-line"></span>
@@ -63,10 +64,7 @@
             </button>
           </li>
           <li class="user-navigation-item user-navigation-item-favorite">
-            <a
-              href="#"
-              class="link user-navigation-btn user-navigation-favorite-link"
-            >
+            <a href="#" class="link user-navigation-btn user-navigation-favorite-link">
               <span class="visually-hidden">Избранное.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,9 +84,7 @@
             </a>
           </li>
           <li class="user-navigation-item user-navigation-item-popup">
-            <a href="#" class="link btn btn-brown user-navigation-popup-btn"
-            >Хочу сюда!</a
-            >
+            <a href="#" class="link btn btn-brown user-navigation-popup-btn">Хочу сюда!</a>
           </li>
         </ul>
       </div>
@@ -103,9 +99,7 @@
               href="index.html"
               class="filter-breadcrumbs-link filter-breadcrumbs-home-link"
             >
-                  <span class="visually-hidden"
-                  >Вернуться на главную страницу.</span
-                  >
+                    <span class="visually-hidden">Вернуться на главную страницу.</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
@@ -133,9 +127,7 @@
           class="filter-form"
         >
           <fieldset class="filter-form-field filter-form-infrastructure">
-            <legend
-              class="filter-form-title filter-form-infrastructure-title"
-            >
+            <legend class="filter-form-title filter-form-infrastructure-title">
               Инфраструктура:
             </legend>
             <div class="filter-form-label-wrapper">
@@ -146,9 +138,7 @@
                 class="custom-checkbox"
                 checked
               >
-              <label class="custom-label" for="filter-form-swimming"
-              >Бассейн</label
-              >
+              <label class="custom-label" for="filter-form-swimming">Бассейн</label>
             </div>
             <div class="filter-form-label-wrapper">
               <input
@@ -158,9 +148,7 @@
                 class="custom-checkbox"
                 checked
               >
-              <label class="custom-label" for="filter-form-parking"
-              >Парковка</label
-              >
+              <label class="custom-label" for="filter-form-parking">Парковка</label>
             </div>
             <div class="filter-form-label-wrapper">
               <input
@@ -185,9 +173,7 @@
                 id="filter-form-hostel"
                 checked
               >
-              <label class="custom-label" for="filter-form-hostel"
-              >Гостиница</label
-              >
+              <label class="custom-label" for="filter-form-hostel">Гостиница</label>
             </div>
             <div class="filter-form-label-wrapper">
               <input
@@ -197,9 +183,7 @@
                 class="custom-radio"
                 id="filter-form-motel"
               >
-              <label class="custom-label" for="filter-form-motel"
-              >Мотель</label
-              >
+              <label class="custom-label" for="filter-form-motel">Мотель</label>
             </div>
             <div class="filter-form-label-wrapper">
               <input
@@ -209,9 +193,7 @@
                 class="custom-radio"
                 id="filter-form-apartments"
               >
-              <label class="custom-label" for="filter-form-apartments"
-              >Апартаменты</label
-              >
+              <label class="custom-label" for="filter-form-apartments">Апартаменты</label>
             </div>
           </fieldset>
           <fieldset class="filter-form-field filter-form-price">
@@ -219,8 +201,8 @@
               Стоимость, ₽:
             </legend>
             <div class="filter-form-price-wrapper">
-              <label
-              ><input
+              <label>
+                <input
                 type="number"
                 name="from"
                 min="0"
@@ -304,9 +286,7 @@
               </li>
               <li class="view-item">
                 <button type="button" class="btn view-btn view-btn-content">
-                      <span class="visually-hidden"
-                      >Вывод файлов с содержимым.</span
-                      >
+                        <span class="visually-hidden">Вывод файлов с содержимым.</span>
                 </button>
               </li>
               <li class="view-item">
@@ -334,12 +314,8 @@
               <span>От&nbsp;4000&nbsp;₽</span>
             </div>
             <div class="catalog-hotels-item-btns">
-              <a href="#" class="link btn btn-brown catalog-hotels-item-btn"
-              >Подробнее</a
-              >
-              <a href="#" class="link btn btn-blue catalog-hotels-item-btn"
-              >В избранное</a
-              >
+              <a href="#" class="link btn btn-brown catalog-hotels-item-btn">Подробнее</a>
+              <a href="#" class="link btn btn-blue catalog-hotels-item-btn">В избранное</a>
             </div>
             <div class="catalog-hotels-item-rating-wrapper">
               <ul class="list star-list">
@@ -378,14 +354,8 @@
               <span>От&nbsp;5000&nbsp;₽</span>
             </div>
             <div class="catalog-hotels-item-btns">
-              <a href="#" class="link btn btn-brown catalog-hotels-item-btn"
-              >Подробнее</a
-              >
-              <a
-                href="#"
-                class="link btn btn-green selected catalog-hotels-item-btn"
-              >В избранном</a
-              >
+              <a href="#" class="link btn btn-brown catalog-hotels-item-btn">Подробнее</a>
+              <a href="#" class="link btn btn-green selected catalog-hotels-item-btn">В избранном</a>
             </div>
             <div class="catalog-hotels-item-rating-wrapper">
               <ul class="list star-list">
@@ -424,12 +394,8 @@
               <span>От&nbsp;2500&nbsp;₽</span>
             </div>
             <div class="catalog-hotels-item-btns">
-              <a href="#" class="link btn btn-brown catalog-hotels-item-btn"
-              >Подробнее</a
-              >
-              <a href="#" class="link btn btn-blue catalog-hotels-item-btn"
-              >В избранное</a
-              >
+              <a href="#" class="link btn btn-brown catalog-hotels-item-btn">Подробнее</a>
+              <a href="#" class="link btn btn-blue catalog-hotels-item-btn">В избранное</a>
             </div>
             <div class="catalog-hotels-item-rating-wrapper">
               <ul class="list star-list">
@@ -465,12 +431,8 @@
               <span>От&nbsp;1500&nbsp;₽</span>
             </div>
             <div class="catalog-hotels-item-btns">
-              <a href="#" class="link btn btn-brown catalog-hotels-item-btn"
-              >Подробнее</a
-              >
-              <a href="#" class="link btn btn-blue catalog-hotels-item-btn"
-              >В избранное</a
-              >
+              <a href="#" class="link btn btn-brown catalog-hotels-item-btn">Подробнее</a>
+              <a href="#" class="link btn btn-blue catalog-hotels-item-btn">В избранное</a>
             </div>
             <div class="catalog-hotels-item-rating-wrapper">
               <ul class="list star-list">
@@ -532,10 +494,7 @@
                 required
               >
             </label>
-            <button
-              type="submit"
-              class="btn btn-blue subscribe-btn"
-            >
+            <button type="submit" class="btn btn-blue subscribe-btn">
               Подписаться
             </button>
           </div>
@@ -549,9 +508,7 @@
             href="https://vk.com/htmlacademy"
             class="link page-footer-social-link page-footer-social-link-vkontakte"
           >
-                <span class="visually-hidden"
-                >Присоединяйтесь к нам Vkontakte.</span
-                >
+                  <span class="visually-hidden">Присоединяйтесь к нам Vkontakte.</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -575,9 +532,7 @@
             href="https://t.me/htmlacademy"
             class="link page-footer-social-link page-footer-social-link-telegram"
           >
-                <span class="visually-hidden"
-                >Присоединяйтесь к нам в Telegram.</span
-                >
+                  <span class="visually-hidden">Присоединяйтесь к нам в Telegram.</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -619,9 +574,7 @@
       </ul>
       <ul class="list page-footer-contacts-list">
         <li class="page-footer-contacts-item">
-          <a href="tel:+78128121212" class="link page-footer-contacts-phone"
-          >+7 (812) 812-12-12</a
-          >
+          <a href="tel:+78128121212" class="link page-footer-contacts-phone">+7 (812) 812-12-12</a>
         </li>
       </ul>
       <ul class="list page-footer-dev-list">
@@ -655,7 +608,8 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button type="button" class="btn modal-close">
           <span class="visually-hidden">Закрыть модальное окно.</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15" aria-hidden="true" focusable="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"
+               aria-hidden="true" focusable="false">
             <path fill="#000"
                   d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/>
           </svg>
@@ -671,11 +625,11 @@
               tabindex="-1"
               required
             >
-            <label><input type="text" class="input modal-input-start" placeholder="Укажите дату"></label>
+            <label>
+              <input type="text" class="input modal-input-start" placeholder="Укажите дату">
+            </label>
           </div>
-          <span class="message error">
-              Мы не можем отправить вас в прошлое.
-            </span>
+          <span class="message error">Мы не можем отправить вас в прошлое.</span>
         </div>
         <label class="modal-label" for="end">Дата&nbsp;Выезда:</label>
         <div class="modal-input-wrapper">
@@ -688,11 +642,11 @@
               tabindex="-1"
               required
             >
-            <label><input type="text" class="input modal-input-end" placeholder="Укажите дату"></label>
+            <label>
+              <input type="text" class="input modal-input-end" placeholder="Укажите дату">
+            </label>
           </div>
-          <span class="message end-info-success">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
+          <span class="message end-info-success">На эти даты есть свободные номера. Пока есть.</span>
         </div>
         <div class="modal-btn-wrapper modal-btn-wrapper-adult">
           <label class="modal-label modal-label-people" for="adults-result">Взрослые: </label>
@@ -753,10 +707,10 @@
             <span>Дети:</span>
             <span class="visually-hidden">Дополнительная информация.</span>
             <button type="button" class="modal-info-wrapper" aria-labelledby="tooltip-label-info" id="modal-info-btn">
-                <span class="modal-info" role="tooltip" id="tooltip-label-info">
-                  Укажите количество детей, которые будут с вами, возраст которых
-                  от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span
-                >
+                  <span class="modal-info" role="tooltip" id="tooltip-label-info">
+                    Укажите количество детей, которые будут с вами, возраст которых
+                    от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
             </button>
           </label>
           <div class="modal-btn-inner-wrapper">
