@@ -229,6 +229,7 @@ body {
 
 .layout-container {
   max-width: 1200px;
+  min-width: 315px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
