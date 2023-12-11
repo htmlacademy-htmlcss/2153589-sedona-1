@@ -46,7 +46,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   background-color: #f2f2f2;
   position: relative;
 }
@@ -521,14 +521,19 @@ h3.visually-hidden {
 
 .advantages-item-opacity-12 {
   background-color: rgba(131, 179, 211, 0.12);
-  color: #000000;
+  color: #333333;
   padding-top: 112px;
 }
 
 .advantages-item-opacity-20 {
   background-color: rgba(131, 179, 211, 0.2);
-  color: #000000;
+  color: #333333;
   padding-top: 112px;
+}
+
+.advantages-item-opacity-12 h3,
+.advantages-item-opacity-20 h3{
+  color: #000000;
 }
 
 .advantages-item-img-wrapper {
