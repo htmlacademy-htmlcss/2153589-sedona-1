@@ -1376,6 +1376,11 @@ input[type="range"]::-moz-range-thumb {
   background-color: #6c9e42;
 }
 
+.catalog-hotels-item-btn:last-child.selected[disabled] {
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
 .catalog-hotels-item-rating-wrapper {
   width: 100%;
   display: flex;
