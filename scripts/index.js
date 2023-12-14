@@ -18,6 +18,7 @@ const childrenResult = document.getElementById("children-result");
 const viewButtons = document.querySelectorAll(".view-btn");
 const showStart = document.querySelector(".modal-input-start");
 const showEnd = document.querySelector(".modal-input-end");
+const layoutContainer = document.querySelector(".layout-container");
 
 let counter=0;
 const monthArray = { '01': 'января', '02': 'февраля', '03': 'марта', '04': 'апреля', '05': 'мая', '06': 'июня', '07': 'июля', '08': 'августа', '09': 'сентября', '10': 'октября', '11': 'ноября', '12': 'декабря' };
@@ -70,7 +71,9 @@ childrenMinusButton.onclick = () => {
 };
 modalShowBtn.onclick = () => {
   modalOverlay.style.display = "flex";
+
 };
+
 modalCloseBtn.onclick = () => {
   modalOverlay.style.display = "none";
 };
