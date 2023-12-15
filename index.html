@@ -378,13 +378,14 @@
                 tabindex="-1"
                 required
               >
-              <label>
-                <input type="text" class="input modal-input-start" placeholder="Укажите дату">
+              <label for="modal-input-start">
+                <span class="visually-hidden">Поле для выбора даты заезда.</span>
               </label>
+              <input type="text" class="input modal-input-start" id="modal-input-start" placeholder="Укажите дату">
             </div>
             <span class="message error">
-            Мы не можем отправить вас в прошлое.
-          </span>
+              Мы не можем отправить вас в прошлое.
+            </span>
           </div>
           <label class="modal-label" for="end">Дата&nbsp;Выезда:</label>
           <div class="modal-input-wrapper">
@@ -397,13 +398,14 @@
                 tabindex="-1"
                 required
               >
-              <label>
-                <input type="text" class="input modal-input-end" placeholder="Укажите дату">
+              <label for="modal-input-end">
+                <span class="visually-hidden">Поле для выбора даты выезда.</span>
               </label>
+              <input type="text" class="input modal-input-end" id="modal-input-end" placeholder="Укажите дату">
             </div>
             <span class="message end-info-success">
-            На эти даты есть свободные номера. Пока есть.
-          </span>
+              На эти даты есть свободные номера. Пока есть.
+            </span>
           </div>
           <div class="modal-btn-wrapper modal-btn-wrapper-adult">
             <label class="modal-label modal-label-people" for="adults-result">Взрослые: </label>

@@ -632,15 +632,15 @@ body {
   max-width: 100%;
 }
 
-.services-item-house{
+.services-item-house {
   background-image: url("../images/index/services-house.svg");
 }
 
-.services-item-food{
+.services-item-food {
   background-image: url("../images/index/services-food.svg");
 }
 
-.services-item-gifts{
+.services-item-gifts {
   background-image: url("../images/index/services-gifts.svg");
 }
 
@@ -708,7 +708,7 @@ body {
   text-align: center;
 }
 
-.subscribe-catalog .subscribe-subtitle{
+.subscribe-catalog .subscribe-subtitle {
   color: #333333;
 }
 
@@ -1024,10 +1024,9 @@ body {
 }
 
 .filter-form-price-wrapper label + label,
-.filter-form-price-wrapper label + label input {
+.filter-form-price-wrapper .filter-form-price-btn-to {
   border-radius: 0 4px 4px 0;
 }
-
 
 .filter-form-price-wrapper label::after {
   content: "от";
@@ -1559,7 +1558,6 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  /*padding-top: 25px;*/
   overflow: scroll;
 }
 
@@ -1685,32 +1683,32 @@ body {
   border: none;
 }
 
-.modal-input + label input:not(:placeholder-shown) {
+.modal-input ~ .input:not(:placeholder-shown) {
   color: rgba(0, 0, 0, 1);
 }
 
-.modal-input:hover + label input {
+.modal-input:hover ~ .input {
   background-color: #e6e6e6;
 }
 
-.modal-input:focus + label input {
+.modal-input:focus ~ .input {
   outline: 3px solid #83b3d3;
   outline-offset: -3px;
   background-color: #e6e6e6;
 }
 
-.modal-input:focus + label input:not(:placeholder-shown),
-.modal-input:not(:disabled):active + label input {
+.modal-input:focus ~ .input:not(:placeholder-shown),
+.modal-input:not(:disabled):active ~ .input {
   outline: 2px solid #000000;
   outline-offset: -2px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 1);
 }
 
-.modal-input:disabled + label input,
-.modal-input:disabled:hover + label input,
-.modal-input:disabled:focus + label input,
-.modal-input:disabled:active + label input {
+.modal-input:disabled ~ .input,
+.modal-input:disabled:hover ~ .input,
+.modal-input:disabled:focus ~ .input,
+.modal-input:disabled:active ~ .input {
   outline: 1px solid rgba(0, 0, 0, 0.2);
   outline-offset: -1px;
   background-color: #f2f2f2;
