@@ -706,6 +706,7 @@ body {
   line-height: 26px;
   margin: 0 auto 56px;
   text-align: center;
+  color: #333333;
 }
 
 .subscribe-inner-wrapper {
@@ -1370,21 +1371,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.catalog-hotels-item-btn:last-child.selected {
-  background-color: #7db54f;
-  color: #ffffff;
-}
-
-.catalog-hotels-item-btn:last-child.selected:hover,
-.catalog-hotels-item-btn:last-child.selected:focus {
-  background-color: #6c9e42;
-}
-
-.catalog-hotels-item-btn:last-child.selected[disabled] {
-  background-color: #e5e5e5;
-  pointer-events: none;
 }
 
 .catalog-hotels-item-rating-wrapper {
