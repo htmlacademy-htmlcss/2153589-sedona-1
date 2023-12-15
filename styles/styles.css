@@ -1625,7 +1625,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.modal-close:active svg path {
+.modal-close:active path {
   fill: #a1a1a1;
 }
 
