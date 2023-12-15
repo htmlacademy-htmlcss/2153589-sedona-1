@@ -706,6 +706,9 @@ body {
   line-height: 26px;
   margin: 0 auto 56px;
   text-align: center;
+}
+
+.subscribe-catalog .subscribe-subtitle{
   color: #333333;
 }
 
