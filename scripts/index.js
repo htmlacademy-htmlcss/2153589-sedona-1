@@ -62,12 +62,12 @@ childrenMinusButton.onclick = () => {
 };
 modalShowBtn.onclick = () => {
   modalOverlay.style.display = "flex";
-
 };
 
 modalCloseBtn.onclick = () => {
   modalOverlay.style.display = "none";
 };
+
 modalOverlay.onclick = (e) => {
   if(e.target.classList.contains("modal-overlay")){
     modalOverlay.style.display = "none";
@@ -99,21 +99,5 @@ end.oninput = (event) => {
     successInfo.style.display = "none";
     end.value = null;
     showEnd.value=null
-  }
-};
-showNavBtn.onclick = () => {
-  showNavBtn.classList.toggle("active");
-  if (showNavBtn.classList.contains("active")) {
-    nav.style.display = "flex";
-    logo.style.display = "none";
-    document.querySelectorAll(".navigation-btn-line").forEach(item => {
-      item.style.display = "none";
-    })
-  } else {
-    nav.style.display = "none";
-    logo.style.display = "block";
-    document.querySelectorAll(".navigation-btn-line").forEach(item => {
-      item.style.display = "block";
-    })
   }
 };
