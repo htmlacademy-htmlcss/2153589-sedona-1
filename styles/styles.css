@@ -40,7 +40,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
+  color: #000000;
   background-color: #f2f2f2;
   position: relative;
 }
@@ -436,16 +436,13 @@ body {
 
 .promo {
   width: 100%;
-  /*background-color: #3f5e72;*/
-  /*background-image: url(),*/
-  /*url("../images/index/promo-background.jpg");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: bottom -3px center, center;*/
-  /*padding: 52px 10px 82px;*/
-  /*background-size: 100% 60px, 100% 100%;*/
-/*"../images/index/promo-divider.svg"*/
-  background: url("../images/index/promo-divider.svg") bottom -5px left/100% 62px no-repeat,
-  url("../images/index/promo-background.jpg") top left/100% 100% no-repeat;
+  background-color: #3f5e72;
+  background-image: url("../images/index/promo-divider.svg"),
+  url("../images/index/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center, center;
+  padding: 52px 10px 82px;
+  background-size: contain, cover;
 }
 
 .promo-text-img {
@@ -480,6 +477,7 @@ body {
   margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 .advantages-list {
@@ -589,10 +587,11 @@ body {
 }
 
 .services-subtitle {
+  max-width: 550px;
   margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
-  max-width: 550px;
+  color: #333333;
 }
 
 .services-list {
