@@ -221,7 +221,6 @@ body {
 
 .layout-container {
   width: 1200px;
-  /*width: 100%;*/
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -399,8 +398,8 @@ body {
 
 .user-navigation-favorite-count {
   position: absolute;
-  right: 3px;
-  top: 10px;
+  right: 2px;
+  top: 9px;
   width: 2em;
   height: 2em;
   background-color: #7db54f;
@@ -408,8 +407,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #ffffff;
-  font-size: 9px;
+  font-size: 10px;
+  line-height: 10px;
+  overflow: hidden;
 }
 
 .user-navigation-popup-btn {
@@ -440,7 +442,7 @@ body {
   background-image: url("../images/index/promo-divider.svg"),
   url("../images/index/promo-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center, center;
+  background-position: center 100.1%, center;
   padding: 52px 10px 82px;
   background-size: contain, cover;
 }
@@ -732,11 +734,16 @@ body {
   border-radius: 4px 0 0 4px;
   padding: 8px 20px;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
   background-color: #f2f2f2;
   width: 100%;
   min-height: 100%;
   box-sizing: border-box;
+}
+
+.subscribe-form-input:not(:placeholder-shown) {
+  color: rgba(0, 0, 0, 1);
 }
 
 .subscribe-btn {
@@ -830,6 +837,8 @@ body {
 .filter-title {
   font-size: 60px;
   line-height: 78px;
+  font-weight: 700;
+  text-transform: capitalize;
   margin: 0 0 7px;
 }
 
@@ -936,12 +945,13 @@ body {
 .filter-form-title {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   text-transform: capitalize;
   margin: 0 0 32px;
 }
 
 .filter-form-infrastructure {
-  margin-right: 70px;
+  margin-right: 67px;
 }
 
 .filter-form-type {
@@ -996,6 +1006,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  color: #000000;
   box-sizing: border-box;
   border: transparent;
   width: 100%;
@@ -1037,7 +1048,9 @@ body {
   top: 0;
   bottom: 0;
   right: 20px;
-  color: rgba(169, 169, 169, 1);
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   max-width: 30px;
@@ -1179,6 +1192,7 @@ body {
   border-radius: 4px;
   font-size: 16px;
   line-height: 21px;
+  color: #333333;
   -webkit-appearance: none;
   appearance: none;
   background: transparent url("../images/icons/select-tick.svg") no-repeat right 20px center;
@@ -1437,6 +1451,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
   border-radius: 4px;
   transition: 0.6s;
 }
@@ -1448,6 +1463,9 @@ body {
 
 .pagination-btn.dots {
   background-color: transparent;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
   color: #000000;
 }
 
@@ -1574,7 +1592,7 @@ body {
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-  padding: 64px 56px 62px 70px;
+  padding: 64px 54px 62px 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1664,6 +1682,9 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   opacity: 0;
 }
 
@@ -1680,10 +1701,15 @@ body {
   align-items: center;
   padding: 12px 30px 12px 20px;
   color: rgba(0, 0, 0, 0.6);
-  background: #f2f2f2 url("../images/icons/date-icon.svg") no-repeat right 20px center;
+  background: #f2f2f2 url("../images/icons/date-icon.svg") no-repeat right 22px center;
   background-size: 15px;
   border-radius: 4px;
   border: none;
+}
+
+.modal-input-start::placeholder,
+.modal-input-end::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-input ~ .input:not(:placeholder-shown) {
@@ -1739,22 +1765,14 @@ body {
 }
 
 .modal-btn-wrapper {
-  flex-basis: 50%;
+  flex-basis: 48%;
   display: flex;
-  justify-content: space-between;
-}
-
-.modal-btn-wrapper-adult {
-  flex-basis: 42%;
 }
 
 .modal-btn-wrapper-children {
   padding-right: 16px;
+  justify-content: flex-end;
   margin-bottom: 48px;
-}
-
-.modal-label-children {
-  padding-left: 42px;
 }
 
 .modal-btn-inner-wrapper,
@@ -1763,17 +1781,17 @@ body {
 }
 
 .modal-label-people {
-  flex-basis: 45%;
-  justify-self: flex-start;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  justify-self: flex-start;
+  margin-right: 44px;
 }
 
 .modal-btn {
   background-color: #f2f2f2;
   border: 0;
-  padding: 14px 6px;
+  padding: 14px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1787,8 +1805,8 @@ body {
 }
 
 .modal-btn svg {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
 }
 
 .modal-btn-plus:hover path,
@@ -1860,6 +1878,7 @@ body {
   font-weight: 400;
   width: 100%;
   padding-left: 18px;
+  color: #333333;
 }
 
 .error {
@@ -1872,7 +1891,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 8px;
+  margin-left: 10px;
   min-width: 26px;
   min-height: 26px;
   background-color: #83b3d3;
@@ -1889,7 +1908,7 @@ body {
   z-index: 5;
   left: 50%;
   transform: translateX(-50%);
-  top: 160%;
+  top: 158%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1897,7 +1916,7 @@ body {
   background-color: #333333;
   color: #ffffff;
   width: 256px;
-  padding: 18px 18px 22px 22px;
+  padding: 20px 18px 22px 22px;
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   display: none;
