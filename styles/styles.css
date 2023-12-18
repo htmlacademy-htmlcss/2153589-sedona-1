@@ -221,7 +221,6 @@ body {
 
 .layout-container {
   width: 1200px;
-  /*width: 100%;*/
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -443,7 +442,7 @@ body {
   background-image: url("../images/index/promo-divider.svg"),
   url("../images/index/promo-background.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center, center;
+  background-position: center 100.1%, center;
   padding: 52px 10px 82px;
   background-size: contain, cover;
 }
@@ -1577,7 +1576,7 @@ body {
   width: 100%;
   height: auto;
   background-color: rgba(242, 242, 242, 0.8);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   overflow: scroll;
